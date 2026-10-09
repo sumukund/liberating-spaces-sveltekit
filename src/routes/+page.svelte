@@ -73,7 +73,7 @@
 
 	const types = ['All types', ...new Set(places.map((place) => place.properties.Type).filter(Boolean))];
 	const statuses = ['All statuses', ...new Set(places.map((place) => place.properties.Still_there_).filter(Boolean))];
-	const visiblePlaces = $derived(places.filter(({ properties }) =>
+	const visiblePlaces = (places.filter(({ properties }) =>
 		(properties.Name.toLowerCase().includes(search.toLowerCase()) || properties.Address.toLowerCase().includes(search.toLowerCase())) &&
 		(typeFilter === 'All types' || properties.Type === typeFilter) &&
 		(statusFilter === 'All statuses' || properties.Still_there_ === statusFilter)
