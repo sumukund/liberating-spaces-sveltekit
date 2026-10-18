@@ -44,7 +44,7 @@
 </script>
 
 <aside class="map-column" aria-label="Interactive Lake Street map">
-	<div class="map-sticky"><div bind:this={mapElement} class="map" aria-label="Map of Lake Street art locations"></div>{#if !ready}<div class="map-loading">Loading map…</div>{/if}{#if selected}<article class="popup"><button class="close" aria-label="Close details" onclick={() => selectedPlace.set(null)}>×</button><p class="eyebrow">{selected.properties.Type} · {selected.properties.Still_there_}</p><h2>{selected.properties.Name}</h2><p>{selected.properties.Address}</p></article>{/if}<div class="map-legend"><b>PLACE STATUS</b><span><i class="present"></i>Present</span><span><i class="future"></i>Future</span><span><i class="past"></i>Past / gone</span></div><div class="map-caption">{places.length} locations <span>·</span> Lake Street, Minneapolis</div></div>
+	<div class="map-sticky"><div bind:this={mapElement} class="map" aria-label="Map of Lake Street locations"></div>{#if !ready}<div class="map-loading">Loading map…</div>{/if}{#if selected}<article class="popup"><button class="close" aria-label="Close details" onclick={() => selectedPlace.set(null)}>×</button><p class="eyebrow">{selected.properties.Type} · {selected.properties.Still_there_}</p><h2>{selected.properties.Name}</h2><p>{selected.properties.Address}</p></article>{/if}<div class="map-legend"><b>Current status</b><span><i class="present"></i>Present</span><span><i class="future"></i>Future</span><span><i class="past"></i>Past / Closed</span></div><div class="map-caption">{places.length} locations <span>·</span> Lake Street, Minneapolis</div></div>
 </aside>
 
 <style>
