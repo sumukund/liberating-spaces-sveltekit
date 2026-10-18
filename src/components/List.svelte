@@ -75,14 +75,14 @@
 		},
 		{
 			id: 'events',
-			kicker: 'GATHERINGS & ACTION',
+			kicker: 'Gatherings and Events',
 			title: 'Events bring people together.',
 			text: 'Performances, assemblies, and shared moments that made the street a place to gather.',
 			filter: (p: Place) => /event|performance/i.test(p.properties.Type)
 		},
 		{
 			id: 'installations',
-			kicker: 'ART IN PUBLIC',
+			kicker: 'Public art and Installations',
 			title: 'Art changes how we see a place.',
 			text: 'Installations and public facing creative work, mapped where it meets the neighborhood.',
 			filter: (p: Place) =>
@@ -90,7 +90,7 @@
 		},
 		{
 			id: 'places',
-			kicker: 'CULTURAL PLACES',
+			kicker: 'Cultural and Community Spaces',
 			title: 'Spaces make culture possible.',
 			text: 'Organizations, venues, and independent places sustaining art and community along the corridor.',
 			filter: (p: Place) =>
@@ -98,8 +98,8 @@
 		},
 		{
 			id: 'gone',
-			kicker: 'MEMORY & CHANGE',
-			title: 'Some places are gone. Their stories remain.',
+			kicker: 'Memories',
+			title: 'Lake Street ',
 			text: 'Past and gone locations are part of the street’s history, and still belong on its map.',
 			filter: (p: Place) => /gone|past/i.test(p.properties.Still_there_)
 		}
