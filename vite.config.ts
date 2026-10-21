@@ -8,6 +8,9 @@ export default defineConfig({
 	optimizeDeps: {
 		exclude: ['mapbox-gl']
 	},
+	define: {
+  'process.env.MAPBOX_API_KEY': JSON.stringify('development'),
+},
 	plugins: [
 		tailwindcss(),
 		sveltekit({
