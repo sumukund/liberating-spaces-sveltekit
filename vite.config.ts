@@ -9,7 +9,7 @@ export default defineConfig({
 		exclude: ['mapbox-gl']
 	},
 	define: {
-  'process.env.MAPBOX_API_KEY': JSON.stringify('development'),
+  'process.env.MAPBOX_API_KEY': JSON.stringify(import.meta.env.VITE_MAPBOX_API_KEY),
 },
 	plugins: [
 		tailwindcss(),
