@@ -53,4 +53,12 @@ npm run build
 
 You can preview the production build with `npm run preview`.
 
+## Mapbox and Firebase setup
+
+Copy `.env.example` to `.env` and set `VITE_MAPBOX_API_KEY`, `VITE_FIREBASE_API_KEY`, and `VITE_FIREBASE_PROJECT_ID`. The Firebase values are public web configuration; restrict the API key to your app domains in Google Cloud.
+
+In Firebase, enable Email/Password under Authentication and create an editor account. Deploy the rules in `firestore.rules` to Cloud Firestore. The map results editor is at the bottom of the place list; signed-in editors can add and update documents in the `mapResults` collection. Map results refresh from Firestore every five seconds.
+
+Timeline entries are in `src/components/timeline-data.js`. Add entries using the same `date`, `label`, and `description` fields.
+
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

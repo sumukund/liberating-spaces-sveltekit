@@ -1,12 +1,14 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import type { GeoJSONSource, Map as MapLibreMapInstance } from 'maplibre-gl';
+	import type { GeoJSONSource, Map as MapboxMapInstance } from 'mapbox-gl';
+	import 'mapbox-gl/dist/mapbox-gl.css';
 	import { activeChapter, activePlaces, focusPlace, selectedPlace } from './stores.js';
-	import 'maplibre-gl/dist/maplibre-gl.css';
+
+
 	type Place = { type: 'Feature'; geometry: { type: 'Point'; coordinates: [number, number] }; properties: { Name: string; Type: string; Still_there_: string; Address: string; description: string; _index?: number } };
 	let mapElement: HTMLDivElement;
-	let map: MapLibreMapInstance;
-	let LngLatBoundsClass: typeof import('maplibre-gl').LngLatBounds;
+	let map: MapboxMapInstance;
+	let LngLatBoundsClass: typeof import('mapbox-gl').LngLatBounds;
 	let ready = $state(false);
 	let places = $state<Place[]>([]);
 	let selected: Place | null = $state(null);
@@ -23,20 +25,28 @@
 	onMount(() => {
 		let disposed = false;
 		async function createMap() {
-			const { LngLatBounds, Map: MapLibreMap, NavigationControl } = await import('maplibre-gl');
+			const mapboxgl = (await import('mapbox-gl/dist/esm/mapbox-gl.js')) as unknown as {
+				Map: typeof import('mapbox-gl').Map;
+				LngLatBounds: typeof import('mapbox-gl').LngLatBounds;
+				NavigationControl: typeof import('mapbox-gl').NavigationControl;
+			};
 			if (disposed) return;
-			LngLatBoundsClass = LngLatBounds;
-		const token = import.meta.env.VITE_MAPBOX_API_KEY;
-		map = new MapLibreMap({ container: mapElement, center: [-93.25, 44.948], zoom: 12.5, style: token ? `https://api.mapbox.com/styles/v1/mapbox/light-v11?access_token=${token}` : { version: 8, sources: { osm: { type: 'raster', tiles: ['https://tile.openstreetmap.org/{z}/{x}/{y}.png'], tileSize: 256, attribution: '© OpenStreetMap contributors' } }, layers: [{ id: 'osm', type: 'raster', source: 'osm' }] } });
-		map.addControl(new NavigationControl(), 'top-right');
-		map.on('load', () => {
-			map.addSource('art-places', { type: 'geojson', data: { type: 'FeatureCollection', features: places } });
-			map.addLayer({ id: 'art-place-points', type: 'circle', source: 'art-places', paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 5, 15, 9], 'circle-color': ['match', ['get', 'Still_there_'], 'Present', '#16856b', 'Future', '#7450b8', 'Gone', '#c05b48', 'Past', '#c05b48', '#d29a38'], 'circle-stroke-color': '#fffaf2', 'circle-stroke-width': 2 } });
-			map.on('click', 'art-place-points', (event) => { const feature = event.features?.[0] as unknown as Place | undefined; if (feature) selectedPlace.set(feature); });
-			map.on('mouseenter', 'art-place-points', () => map.getCanvas().style.cursor = 'pointer');
-			map.on('mouseleave', 'art-place-points', () => map.getCanvas().style.cursor = '');
-			ready = true; updatePlaces(); fitPlaces();
-		});
+			LngLatBoundsClass = mapboxgl.LngLatBounds;
+			const token = import.meta.env.VITE_MAPBOX_API_KEY;
+			if (!token) {
+				console.error('Mapbox API key is missing');
+				return;
+			}
+			map = new mapboxgl.Map({ accessToken: token, container: mapElement, center: [-93.25, 44.948], zoom: 12.5, style: 'mapbox://styles/mapbox/light-v11' });
+			map.addControl(new mapboxgl.NavigationControl(), 'top-right');
+			map.on('load', () => {
+				map.addSource('art-places', { type: 'geojson', data: { type: 'FeatureCollection', features: places } });
+				map.addLayer({ id: 'art-place-points', type: 'circle', source: 'art-places', paint: { 'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 5, 15, 9], 'circle-color': ['match', ['get', 'Still_there_'], 'Present', '#16856b', 'Future', '#7450b8', 'Gone', '#c05b48', 'Past', '#c05b48', '#d29a38'], 'circle-stroke-color': '#fffaf2', 'circle-stroke-width': 2 } });
+				map.on('click', 'art-place-points', (event) => { const feature = event.features?.[0] as unknown as Place | undefined; if (feature) selectedPlace.set(feature); });
+				map.on('mouseenter', 'art-place-points', () => map.getCanvas().style.cursor = 'pointer');
+				map.on('mouseleave', 'art-place-points', () => map.getCanvas().style.cursor = '');
+				ready = true; updatePlaces(); fitPlaces();
+			});
 		}
 		void createMap();
 		return () => { disposed = true; map?.remove(); unsubscribePlaces(); unsubscribeChapter(); unsubscribeFocus(); unsubscribeSelected(); };

@@ -1,22 +1,10 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { extent, scaleTime } from 'd3';
+	import { timelineData as timelineEntries } from './timeline-data.js';
 
 	type TimelineItem = { date: Date; label: string; description: string };
-	// Examples only: replace these placeholders with verified Lake Street arts history.
-	const timelineData: TimelineItem[] = [
-		{
-			date: new Date(1990, 0, 1),
-			label: 'Sample milestone · 1990',
-			description: 'Placeholder entry. Replace this with a verified Lake Street arts milestone.'
-		},
-		{
-			date: new Date(2026, 9, 16),
-			label: 'Sample milestone · Today',
-			description:
-				'Placeholder entry for today. Replace this with a current, verified Lake Street arts milestone.'
-		}
-	];
+	const timelineData: TimelineItem[] = timelineEntries.map((item) => ({ ...item, date: new Date(item.date) }));
 	const margin = { left: 54, right: 54 };
 	let currentStep = $state(0);
 	let width = $state(640);
@@ -110,18 +98,18 @@
 
 <style>
 	.timeline-section {
-		background: #e8e1d4;
+		background: var(--color-lavender-veil);
 		color: #252922;
 	}
 	.timeline-heading {
 		padding: 100px max(8vw, 24px) 65px;
-		border-top: 1px solid #d3cbbb;
+		border-top: 1px solid var(--color-lavender-veil);
 	}
 	.eyebrow {
 		font-size: 9px;
 		letter-spacing: 0.17em;
 		font-weight: bold;
-		color: #a44735;
+		color: var(--color-vintage-lavender);
 		margin: 0 0 18px;
 	}
 	.timeline-heading h1 {
@@ -133,7 +121,7 @@
 	}
 	.timeline-heading h1 i {
 		font-weight: 400;
-		color: #a44735;
+		color: var(--color-vintage-lavender);
 	}
 	.intro {
 		max-width: 450px;
@@ -182,7 +170,7 @@
 			fill 0.35s;
 	}
 	.graphic-pane circle.active {
-		fill: #a44735;
+		fill: var(--color-vintage-lavender);
 	}
 	.graphic-pane circle.visited {
 		fill: #597968;
@@ -202,7 +190,7 @@
 		color: #78766c;
 	}
 	.graphic-caption span {
-		color: #a44735;
+		color: var(--color-vintage-lavender);
 		padding: 0 6px;
 	}
 	.narrative-pane {
@@ -238,7 +226,7 @@
 	}
 	.step time {
 		font-size: 11px;
-		color: #a44735;
+		color: var(--color-vintage-lavender);
 		margin-top: 24px;
 	}
 	@media (max-width: 760px) {

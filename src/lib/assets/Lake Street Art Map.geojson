@@ -1,55 +1,1091 @@
 {
-"type": "FeatureCollection",
-"name": "Lake Street Art Map.xlsx",
-"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-"features": [
-{ "type": "Feature", "properties": { "Name": "COPAL", "description": "Type: Cultural Organization<br>Still there?: Future<br>Address: 2905 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Cultural Organization", "Still_there_": "Future", "Address": "2905 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "El Nuevo Rodeo", "description": "Type: Entertainment<br>Still there?: Gone<br>Address: 2709 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Entertainment", "Still_there_": "Gone", "Address": "2709 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Hook & Ladder Theater", "description": "Type: Entertainment<br>Still there?: Present<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Entertainment", "Still_there_": "Present", "Address": "3010 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Third Precinct Projection Event", "description": "Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "3000 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "The Muatas/Hook & Ladder", "description": "Type: Performance<br>Still there?: Past<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Performance", "Still_there_": "Past", "Address": "3010 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Neighbor Assembly/Confluence", "description": "Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "3000 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Confluence Studio", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "3032 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Life Born of Fire", "description": "Type: Event<br>Still there?: Past<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "3032 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Modus Locus", "description": "Type: Gallery<br>Still there?: Present<br>Address: 3500 Bloomington Ave, Minneapolis, MN 55407", "visibility": -1, "Type": "Gallery", "Still_there_": "Present", "Address": "3500 Bloomington Ave, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Neighbor Assembly/Confluence", "description": "Type: Event<br>Still there?: Past<br>Address: 3104 16th Ave S, Minneapolis, MN 55407", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "3104 16th Ave S, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Beyond Repair", "description": "Type: Store<br>Still there?: Gone<br>Address: 920 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Store", "Still_there_": "Gone", "Address": "920 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Midtown Global Market", "description": "Type: Market<br>Still there?: Present<br>Address: 920 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Market", "Still_there_": "Present", "Address": "920 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Roberts Annex", "description": "Type: Community Center<br>Still there?: Gone<br>Address: 730 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Community Center", "Still_there_": "Gone", "Address": "730 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Healing Aqal", "description": "Type: Installation<br>Still there?: Past<br>Address: E Lake St & Chicago Ave, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "E Lake St & Chicago Ave, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Assembly-Beyond Repair", "description": "Type: Event<br>Still there?: Past<br>Address: 2848 Columbus Ave S, Minneapolis, MN 55407", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "2848 Columbus Ave S, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Strength in Unity", "description": "Type: Sculpture<br>Still there?: Present<br>Address: 2929 E 29th St, Minneapolis, MN 55408", "visibility": -1, "Type": "Sculpture", "Still_there_": "Present", "Address": "2929 E 29th St, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "LynLake Street Art Series/Legacy Glassworks", "description": "Type: Event<br>Still there?: Past<br>Address: 2928 Lyndale Ave S, Minneapolis, MN 55408", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "2928 Lyndale Ave S, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Pangea World Theater", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 711 W Lake St, Minneapolis, MN 55408", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "711 W Lake St, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "The Muatas/Pangea", "description": "Type: Performance<br>Still there?: Past<br>Address: 711 W Lake St, Minneapolis, MN 55408", "visibility": -1, "Type": "Performance", "Still_there_": "Past", "Address": "711 W Lake St, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Buffalo Show", "description": "Type: Performance<br>Still there?: Past<br>Address: E Lake St & Bryant Ave S, Minneapolis, MN 55408", "visibility": -1, "Type": "Performance", "Still_there_": "Past", "Address": "E Lake St & Bryant Ave S, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 721 W Lake Street, Minneapolis, MN 55408", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "721 W Lake Street, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 821 W Lake St, Minneapolis, MN 55408", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "821 W Lake St, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 1522 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "1522 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 1601 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "1601 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 1703 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "1703 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 1821 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "1821 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3016 Minnehaha Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3016 Minnehaha Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 2727 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "2727 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 2910 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "2910 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3601 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3601 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3815 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3815 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3820 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3820 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 4646 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "4646 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3822 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3822 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Poetry in the Windows/Pangea", "description": "Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3009 27th Ave S, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Metamorphosis", "description": "Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "3009 27th Ave S, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Colors of Lake Street", "description": "Type: Installation<br>Still there?: Past<br>Address: 920 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "920 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Transition Stage", "description": "Type: Installation<br>Still there?: Past<br>Address: 2613 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Installation", "Still_there_": "Past", "Address": "2613 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Save the Boards Street Art/Coliseum Building", "description": "Type: Exhibition<br>Still there?: Present<br>Address: 2708 E Lake St, Minneapolis, MN 55406", "visibility": -1, "Type": "Exhibition", "Still_there_": "Present", "Address": "2708 E Lake St, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Memorialize the Movement", "description": "Type: Gallery<br>Still there?: Present<br>Address: 3140 Snelling Ave, Minneapolis, MN 55406", "visibility": -1, "Type": "Gallery", "Still_there_": "Present", "Address": "3140 Snelling Ave, Minneapolis, MN 55406" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "HOTB puppet library/Avalon Theater", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 1500 E Lake St, Minneapolis, MN 55407", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "1500 E Lake St, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "LSA! workshops/Mudluk", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 2951 Bloomington Ave, Minneapolis, MN 55407", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "2951 Bloomington Ave, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Mudluk Pottery", "description": "Type: Gallery<br>Still there?: Present<br>Address: 2952 Bloomington Ave, Minneapolis, MN 55407", "visibility": -1, "Type": "Gallery", "Still_there_": "Present", "Address": "2952 Bloomington Ave, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Hijinks Stilts 2023/Powderhorn Park", "description": "Type: Event<br>Still there?: Past<br>Address: 3400 15th Ave S, Minneapolis, MN 55407", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "3400 15th Ave S, Minneapolis, MN 55407" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Jungle Theater", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 2951 Lyndale Ave S, Minneapolis, MN 55408", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "2951 Lyndale Ave S, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Buffalo Show/ Oyate Hotanin/ Bryant Lake Bowl", "description": "Type: Event<br>Still there?: Past<br>Address: 810 W Lake St, Minneapolis, MN 55408", "visibility": -1, "Type": "Event", "Still_there_": "Past", "Address": "810 W Lake St, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Soo Visual Arts Center", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 2909 Bryant Ave S, Minneapolis, MN 55408", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "2909 Bryant Ave S, Minneapolis, MN 55408" }, "geometry": null },
-{ "type": "Feature", "properties": { "Name": "Highpoint Center for Printmaking", "description": "Type: Art Organization<br>Still there?: Present<br>Address: 912 W Lake St, Minneapolis, MN 55408", "visibility": -1, "Type": "Art Organization", "Still_there_": "Present", "Address": "912 W Lake St, Minneapolis, MN 55408" }, "geometry": null }
-]
+	"type": "FeatureCollection",
+	"name": "Lake Street Art Map.xlsx",
+	"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+	"features": [
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "COPAL",
+				"description": "Type: Cultural Organization<br>Still there?: Future<br>Address: 2905 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Cultural Organization",
+				"Still_there_": "Future",
+				"Address": "2905 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.22894, 44.94852] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "El Nuevo Rodeo",
+				"description": "Type: Entertainment<br>Still there?: Gone<br>Address: 2709 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Entertainment",
+				"Still_there_": "Gone",
+				"Address": "2709 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23432, 44.94853] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Hook & Ladder Theater",
+				"description": "Type: Entertainment<br>Still there?: Present<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Entertainment",
+				"Still_there_": "Present",
+				"Address": "3010 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23652, 44.94691] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Third Precinct Projection Event",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "3000 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23654, 44.94723] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "The Muatas/Hook & Ladder",
+				"description": "Type: Performance<br>Still there?: Past<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Performance",
+				"Still_there_": "Past",
+				"Address": "3010 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23652, 44.94691] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Neighbor Assembly/Confluence",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "3000 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23654, 44.94723] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Confluence Studio",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "3032 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23651, 44.94623] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Life Born of Fire",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "3032 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23651, 44.94623] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Modus Locus",
+				"description": "Type: Gallery<br>Still there?: Present<br>Address: 3500 Bloomington Ave, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Gallery",
+				"Still_there_": "Present",
+				"Address": "3500 Bloomington Ave, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25996, 44.93922] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Neighbor Assembly/Confluence",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 3104 16th Ave S, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "3104 16th Ave S, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25143, 44.94532] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Beyond Repair",
+				"description": "Type: Store<br>Still there?: Gone<br>Address: 920 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Store",
+				"Still_there_": "Gone",
+				"Address": "920 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26252, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Midtown Global Market",
+				"description": "Type: Market<br>Still there?: Present<br>Address: 920 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Market",
+				"Still_there_": "Present",
+				"Address": "920 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26252, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Roberts Annex",
+				"description": "Type: Community Center<br>Still there?: Gone<br>Address: 730 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Community Center",
+				"Still_there_": "Gone",
+				"Address": "730 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26621, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Healing Aqal",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: E Lake St & Chicago Ave, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "E Lake St & Chicago Ave, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26042, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Assembly-Beyond Repair",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 2848 Columbus Ave S, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "2848 Columbus Ave S, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26871, 44.94951] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Strength in Unity",
+				"description": "Type: Sculpture<br>Still there?: Present<br>Address: 2929 E 29th St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Sculpture",
+				"Still_there_": "Present",
+				"Address": "2929 E 29th St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23841, 44.94912] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "LynLake Street Art Series/Legacy Glassworks",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 2928 Lyndale Ave S, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "2928 Lyndale Ave S, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28821, 44.94921] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Pangea World Theater",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 711 W Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "711 W Lake St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28852, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "The Muatas/Pangea",
+				"description": "Type: Performance<br>Still there?: Past<br>Address: 711 W Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Performance",
+				"Still_there_": "Past",
+				"Address": "711 W Lake St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28852, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Buffalo Show",
+				"description": "Type: Performance<br>Still there?: Past<br>Address: E Lake St & Bryant Ave S, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Performance",
+				"Still_there_": "Past",
+				"Address": "E Lake St & Bryant Ave S, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28621, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 721 W Lake Street, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "721 W Lake Street, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28891, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 821 W Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "821 W Lake St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.29051, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 1522 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "1522 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25052, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 1601 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "1601 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24912, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 1703 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "1703 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24711, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 1821 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "1821 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24491, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3016 Minnehaha Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3016 Minnehaha Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23651, 44.94672] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 2727 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "2727 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23391, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 2910 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "2910 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23011, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3601 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3601 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.22011, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3815 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3815 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.21611, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3820 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3820 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.21591, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 4646 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "4646 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.20191, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3822 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3822 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.21551, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Poetry in the Windows/Pangea",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3009 27th Ave S, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23412, 44.94551] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Metamorphosis",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "3009 27th Ave S, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23412, 44.94551] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Colors of Lake Street",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 920 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "920 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26252, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Transition Stage",
+				"description": "Type: Installation<br>Still there?: Past<br>Address: 2613 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Installation",
+				"Still_there_": "Past",
+				"Address": "2613 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23611, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Save the Boards Street Art/Coliseum Building",
+				"description": "Type: Exhibition<br>Still there?: Present<br>Address: 2708 E Lake St, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Exhibition",
+				"Still_there_": "Present",
+				"Address": "2708 E Lake St, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23431, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Memorialize the Movement",
+				"description": "Type: Gallery<br>Still there?: Present<br>Address: 3140 Snelling Ave, Minneapolis, MN 55406",
+				"visibility": -1,
+				"Type": "Gallery",
+				"Still_there_": "Present",
+				"Address": "3140 Snelling Ave, Minneapolis, MN 55406"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24411, 44.94491] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "HOTB puppet library/Avalon Theater",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 1500 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "1500 E Lake St, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25091, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "LSA! workshops/Mudluk",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 2951 Bloomington Ave, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "2951 Bloomington Ave, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25991, 44.94911] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Mudluk Pottery",
+				"description": "Type: Gallery<br>Still there?: Present<br>Address: 2952 Bloomington Ave, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Gallery",
+				"Still_there_": "Present",
+				"Address": "2952 Bloomington Ave, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25991, 44.94901] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Hijinks Stilts 2023/Powderhorn Park",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 3400 15th Ave S, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "3400 15th Ave S, Minneapolis, MN 55407"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25311, 44.94111] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Jungle Theater",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 2951 Lyndale Ave S, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Past",
+				"Address": "2951 Lyndale Ave S, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28821, 44.94911] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Buffalo Show/ Oyate Hotanin/ Bryant Lake Bowl",
+				"description": "Type: Event<br>Still there?: Past<br>Address: 810 W Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Event",
+				"Still_there_": "Past",
+				"Address": "810 W Lake St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.29011, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Soo Visual Arts Center",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 2909 Bryant Ave S, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "2909 Bryant Ave S, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.28621, 44.94951] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Highpoint Center for Printmaking",
+				"description": "Type: Art Organization<br>Still there?: Present<br>Address: 912 W Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Type": "Art Organization",
+				"Still_there_": "Present",
+				"Address": "912 W Lake St, Minneapolis, MN 55408"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.29211, 44.94832] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled",
+				"description": "Artist: Kada Goalan & Stacia Goodman, 2023<br>Address: 35W Transit Station, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Kada Goalan & Stacia Goodman",
+				"Year": "2023",
+				"Address": "35W Transit Station, Minneapolis, MN 55408",
+				"Type": "Mural",
+				"Still_there_": "Present"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.27311, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "En Buscan",
+				"description": "Artist: Trujillo Collective, 2002<br>Address: 11 East Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Trujillo Collective",
+				"Year": "2002",
+				"Address": "11 East Lake St, Minneapolis, MN 55408",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.27351, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Chichén Itzá / Mayan Calendar",
+				"description": "Artist: Victor Yepez, 2022<br>Address: 301 E Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Victor Yepez",
+				"Year": "2022",
+				"Address": "301 E Lake St, Minneapolis, MN 55408",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.27211, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Somalia Landscape",
+				"description": "Artist: Victor Yepez, 2022<br>Address: 301 E Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Victor Yepez",
+				"Year": "2022",
+				"Address": "301 E Lake St, Minneapolis, MN 55408",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.27211, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "The Healer",
+				"description": "Artist: Gustavo Lira & Tierra Diaz Xilam Balam, 2022<br>Address: 2932 Clinton Ave, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Gustavo Lira & Tierra Diaz Xilam Balam",
+				"Year": "2022",
+				"Address": "2932 Clinton Ave, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26611, 44.94931] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled",
+				"description": "Artist: Unknown Artist, 2000<br>Address: 417 E Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Unknown Artist",
+				"Year": "2000",
+				"Address": "417 E Lake St, Minneapolis, MN 55408",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26811, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Diversidad",
+				"description": "Artist: Victor Yepez & Karen Cisneros, 2023<br>Address: 515 E Lake St, Minneapolis, MN 55408",
+				"visibility": -1,
+				"Artist": "Victor Yepez & Karen Cisneros",
+				"Year": "2023",
+				"Address": "515 E Lake St, Minneapolis, MN 55408",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26651, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled",
+				"description": "Artist: Melodee Strong, 2021<br>Address: 720 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Melodee Strong",
+				"Year": "2021",
+				"Address": "720 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26621, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled (Lower)",
+				"description": "Artist: Black Daze, 2019<br>Address: 740 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Black Daze",
+				"Year": "2019",
+				"Address": "740 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26551, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled (Upper)",
+				"description": "Artist: Biafra, 2023<br>Address: 740 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Biafra",
+				"Year": "2023",
+				"Address": "740 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26551, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Hamdi Restaurant",
+				"description": "Artist: Melodee Strong, 2021<br>Address: 818 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Melodee Strong",
+				"Year": "2021",
+				"Address": "818 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26351, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "The Charging of Lake Street",
+				"description": "Artist: Greg Gossel, 2022<br>Address: 825 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Greg Gossel",
+				"Year": "2022",
+				"Address": "825 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.26321, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Nanaandawi (to heal)",
+				"description": "Artist: City Mischief Murals, 2020<br>Address: 1001 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "City Mischief Murals",
+				"Year": "2020",
+				"Address": "1001 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25951, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Cultivating Collaborative Communities",
+				"description": "Artist: Modern Day Me, ft. Tom Janssen, 2023<br>Address: 2965 11th Ave S, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Modern Day Me, ft. Tom Janssen",
+				"Year": "2023",
+				"Address": "2965 11th Ave S, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25911, 44.94911] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Ven, Seremos",
+				"description": "Artist: Copla Murals, 2020<br>Address: 1112 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Copla Murals",
+				"Year": "2020",
+				"Address": "1112 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25751, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Our Lake Street Loves",
+				"description": "Artist: Good Space Murals, 2018<br>Address: 1200 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Good Space Murals",
+				"Year": "2018",
+				"Address": "1200 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25551, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Southside (Re) Cycles",
+				"description": "Artist: Olivia Levins Holden, Tori Hong & Reggie LeFlore, 2018<br>Address: 2939 12th Ave S, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Olivia Levins Holden, Tori Hong & Reggie LeFlore",
+				"Year": "2018",
+				"Address": "2939 12th Ave S, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25611, 44.94931] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Mi Barrio Project",
+				"description": "Artist: Pablo Kalaka, 2023<br>Address: 1201 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Pablo Kalaka",
+				"Year": "2023",
+				"Address": "1201 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25531, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Hooyo (Mom)",
+				"description": "Artist: Pablo Kalaka, 2023<br>Address: 1201 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Pablo Kalaka",
+				"Year": "2023",
+				"Address": "1201 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25531, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled",
+				"description": "Artist: Melodee Strong, 2023<br>Address: 1229 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Melodee Strong",
+				"Year": "2023",
+				"Address": "1229 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25411, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Procesión",
+				"description": "Artist: Pablo Kalaka, 2023<br>Address: 1304 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Pablo Kalaka",
+				"Year": "2023",
+				"Address": "1304 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25251, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Lake Street Laundry",
+				"description": "Artist: Miskitoos & El Niño Perdido, 2022<br>Address: 1401 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Miskitoos & El Niño Perdido",
+				"Year": "2022",
+				"Address": "1401 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25111, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Dignified Housing / Vivienda Digna",
+				"description": "Artist: Sky Without Limits Cooperative, 2021<br>Address: 1410 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Sky Without Limits Cooperative",
+				"Year": "2021",
+				"Address": "1410 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25051, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Supermercado Morelia",
+				"description": "Artist: Rodrigo Oñate, 2021<br>Address: 1417 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Rodrigo Oñate",
+				"Year": "2021",
+				"Address": "1417 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.25011, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled",
+				"description": "Artist: Melodee Strong, 2023<br>Address: 1426 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Melodee Strong",
+				"Year": "2023",
+				"Address": "1426 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24951, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Frida",
+				"description": "Artist: Copla Murals, 2023<br>Address: 1515 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Copla Murals",
+				"Year": "2023",
+				"Address": "1515 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24751, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Taco Taxi",
+				"description": "Artist: Pablo Kalaka, 2024<br>Address: 1511 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Pablo Kalaka",
+				"Year": "2024",
+				"Address": "1511 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24781, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Todos Vuelven",
+				"description": "Artist: Pablo Kalaka, 2018<br>Address: 1515 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Pablo Kalaka",
+				"Year": "2018",
+				"Address": "1515 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24751, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Los Ancestros / Wichahunkaka",
+				"description": "Artist: Copla Murals, 2022<br>Address: 1522 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Copla Murals",
+				"Year": "2022",
+				"Address": "1522 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24711, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Juntos Crecemos / Together We Grow",
+				"description": "Artist: Greta McLain, 2013<br>Address: 1522 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Greta McLain",
+				"Year": "2013",
+				"Address": "1522 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24711, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Family Partnership",
+				"description": "Artist: City Mischief Murals, 2021<br>Address: 1527 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "City Mischief Murals",
+				"Year": "2021",
+				"Address": "1527 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24681, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Life Representation of Diversity",
+				"description": "Artist: Abdifatah Osman, 2023<br>Address: 1552 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Abdifatah Osman",
+				"Year": "2023",
+				"Address": "1552 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24611, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Degan Childcare",
+				"description": "Artist: Reggie LeFlore, 2018<br>Address: 1545 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Reggie LeFlore",
+				"Year": "2018",
+				"Address": "1545 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24631, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Ingebretsen's",
+				"description": "Artist: Judith Nelson Kjervlad, 2019<br>Address: 1601 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Judith Nelson Kjervlad",
+				"Year": "2019",
+				"Address": "1601 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24511, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Panaderia San Miguel",
+				"description": "Artist: Charles Garcia, 2022<br>Address: 1623 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Charles Garcia",
+				"Year": "2022",
+				"Address": "1623 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24451, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Ayeeyo Childcare Center",
+				"description": "Artist: Biafra, 2018<br>Address: 1837 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Biafra",
+				"Year": "2018",
+				"Address": "1837 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24051, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Osoy Health Health",
+				"description": "Artist: Daren Scott Hill, 2022<br>Address: 1841 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Daren Scott Hill",
+				"Year": "2022",
+				"Address": "1841 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.24011, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Untitled / Mattress Plus Furniture",
+				"description": "Artist: Daren Scott Hill & Tom Jay, 2023<br>Address: 1843 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Daren Scott Hill & Tom Jay",
+				"Year": "2023",
+				"Address": "1843 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23981, 44.94851] }
+		},
+		{
+			"type": "Feature",
+			"properties": {
+				"Name": "Me abrazo a tu ausencia",
+				"description": "Artist: Copla Murals, 2021<br>Address: 1855 E Lake St, Minneapolis, MN 55407",
+				"visibility": -1,
+				"Artist": "Copla Murals",
+				"Year": "2021",
+				"Address": "1855 E Lake St, Minneapolis, MN 55407",
+				"Type": "Mural"
+			},
+			"geometry": { "type": "Point", "coordinates": [-93.23911, 44.94851] }
+		}
+	]
 }

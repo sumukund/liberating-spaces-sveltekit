@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
 	base: 'https://github.com/sumukund/liberating-spaces', // Replace with your exact GitHub repository name
 	optimizeDeps: {
-		exclude: ['maplibre-gl']
+		exclude: ['mapbox-gl']
 	},
 	plugins: [
 		tailwindcss(),

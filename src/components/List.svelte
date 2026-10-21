@@ -3,6 +3,8 @@
 	import { get } from 'svelte/store';
 	import lakeStreetRaw from '#lib/assets/Lake Street Art Map.geojson?raw';
 	import { activeChapter, activePlaces, focusPlace, selectedPlace } from './stores.js';
+	import { firebasePlaces, watchPlaces } from '../lib/firebase.js';
+
 	type Place = {
 		type: 'Feature';
 		geometry: { type: 'Point'; coordinates: [number, number] };
@@ -13,57 +15,13 @@
 			Address: string;
 			description: string;
 			_index?: number;
+			_id?: string;
 		};
 	};
 	const source = JSON.parse(lakeStreetRaw) as {
-		features: { type: 'Feature'; properties: Place['properties'] }[];
+		features: Place[];
 	};
-	function locate(address: string, index: number): [number, number] {
-		const number = Number(address.match(/^\d+/)?.[0] ?? 3000),
-			lower = address.toLowerCase();
-		let lng = -93.25,
-			lat = 44.948;
-		if (lower.includes('lake st'))
-			lng = lower.includes('w lake')
-				? -93.265 - number * 0.000006
-				: lower.includes('e lake')
-					? -93.262 + number * 0.000006
-					: -93.262;
-		else if (lower.includes('minnehaha')) {
-			lng = -93.234;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('bloomington')) {
-			lng = -93.252;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('lyndale')) {
-			lng = -93.288;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('bryant')) {
-			lng = -93.291;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('chicago')) lng = -93.262;
-		else if (lower.includes('15th ave')) {
-			lng = -93.255;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('16th ave')) {
-			lng = -93.254;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('27th ave')) {
-			lng = -93.231;
-			lat += (number - 3000) * 0.000008;
-		} else if (lower.includes('29th st')) {
-			lat = 44.942;
-			lng = -93.262 + (number - 2900) * 0.000006;
-		} else if (lower.includes('snelling')) lng = -93.222;
-		const duplicateCount = source.features.filter((f) => f.properties.Address === address).length;
-		const offset =
-			duplicateCount > 1 ? ((index % duplicateCount) - (duplicateCount - 1) / 2) * 0.00012 : 0;
-		return [lng + offset, lat + offset];
-	}
-	const places: Place[] = source.features.map((feature, index) => ({
-		...feature,
-		geometry: { type: 'Point', coordinates: locate(feature.properties.Address, index) }
-	}));
+	let places = $state<Place[]>(source.features);
 	// Customize chapter copy and category matching here. The active chapter controls Map.svelte.
 	const chapters = [
 		{
@@ -96,23 +54,31 @@
 			filter: (p: Place) =>
 				!/event|performance|installation|sculpture|exhibition|mural/i.test(p.properties.Type)
 		},
+				{
+			id: 'murals',
+			kicker: 'Murals',
+			title: 'Street art and visible culture on Lake Street',
+			text: 'Murals that brighten the neighborhood and showcase the diversity of culture in Minnesota.',
+			filter: (p: Place) =>
+				/mural/i.test(p.properties.Type)
+		},
 		{
-			id: 'gone',
+			id: 'past',
 			kicker: 'Memories',
 			title: 'Lake Street ',
-			text: 'Past and gone locations are part of the street’s history, and still belong on its map.',
-			filter: (p: Place) => /gone|past/i.test(p.properties.Still_there_)
+			text: 'Past locations are part of the street’s history and show us how the art community has changed over time.',
+			filter: (p: Place) => /past/i.test(p.properties.Still_there_)
 		}
 	];
 	let listElement: HTMLElement;
 	let search = $state('');
 	let typeFilter = $state('All types');
 	let statusFilter = $state('All statuses');
-	const types = ['All types', ...new Set(places.map((p) => p.properties.Type).filter(Boolean))];
-	const statuses = [
+	let types = $derived(['All types', ...new Set(places.map((p) => p.properties.Type).filter(Boolean))]);
+	let statuses = $derived([
 		'All statuses',
 		...new Set(places.map((p) => p.properties.Still_there_).filter(Boolean))
-	];
+	]);
 	let visiblePlaces = $derived(
 		places.filter((p) => {
 			const q = search.toLowerCase();
@@ -135,6 +101,18 @@
 		focusPlace.set(place);
 	}
 	onMount(() => {
+		let cloudRecords: any[] = [];
+		let disposed = false;
+		const syncPlaces = () => {
+			const cloud = cloudRecords.map((record) => ({
+				type: 'Feature' as const,
+				geometry: { type: 'Point' as const, coordinates: record.coordinates ?? [-93.25, 44.948] as [number, number] },
+				properties: { Name: record.Name, Type: record.Type, Still_there_: record.Still_there_, Address: record.Address, description: record.description, _id: record.id }
+			}));
+			places = [...places.filter((place) => !place.properties._id), ...cloud];
+		};
+		const stopWatching = watchPlaces((error) => console.error('Unable to load Firebase map results:', error));
+		const stopStore = firebasePlaces.subscribe((items) => { cloudRecords = items as any[]; syncPlaces(); });
 		const observer = new IntersectionObserver(
 			(entries) => {
 				for (const entry of entries)
@@ -146,20 +124,20 @@
 		listElement
 			.querySelectorAll<HTMLElement>('[data-chapter]')
 			.forEach((el) => observer.observe(el));
-		return () => observer.disconnect();
+		return () => { disposed = true; observer.disconnect(); stopWatching(); stopStore(); };
 	});
 </script>
 
 <div class="list-column" bind:this={listElement}>
 	<header class="topbar">
 		<a class="brand" href="#top"
-			><span class="mark">LS</span><span
+			><span
 				><strong>Liberating Spaces</strong><small>Lake Street Art Map</small></span
 			></a
-		><a class="about-link" href="#collection">Explore the map <span>↓</span></a>
+		><a class="about-link" href="#collection">Explore the map</a>
 	</header>
 	<section class="intro" id="top">
-		<h1>Art <br />on <i>Lake Street.</i></h1>
+		<h1>Art <br />on <i>Lake Street</i></h1>
 		<p class="intro-copy">
 			A map of the art, gathering places, and cultural spaces that make up the Lake Street corridor.
 		</p>
@@ -174,13 +152,13 @@
 				<p class="eyebrow">{chapter.kicker}</p>
 				<h2>{chapter.title}</h2>
 				<p class="chapter-copy">{chapter.text}</p>
-				<span class="chapter-count">{places.filter(chapter.filter).length} LOCATIONS</span>
+				<span class="chapter-count">{places.filter(chapter.filter).length} locations</span>
 			</article>{/each}
 	</section>
 	<section class="directory">
 		<div class="directory-head">
 			<div><h2>Search</h2></div>
-			<span>{visiblePlaces.length} places</span>
+			<span>{places.length} places</span>
 		</div>
 		<div class="filters">
 			<label><span>Search</span><input bind:value={search} placeholder="Name or address" /></label
@@ -198,7 +176,7 @@
 			{#each visiblePlaces as place, i (`${place.properties.Name}-${i}`)}<button
 					class="place-card"
 					onclick={() => choose(place)}
-					><span class="place-dot" data-status={place.properties.Still_there_}></span><span
+					><span class="place-dot"></span><span
 						><strong>{place.properties.Name}</strong><small>{place.properties.Address}</small><em
 							>{place.properties.Type} · {place.properties.Still_there_}</em
 						></span
@@ -211,7 +189,7 @@
 <style>
 	.list-column {
 		min-width: 0;
-		background: #f3efe7;
+		background: var(--color-lavender-veil);
 	}
 	.topbar {
 		height: 82px;
@@ -219,7 +197,7 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom: 1px solid #d9d3c7;
+		border-bottom: 1px solid var(--color-thistle);
 	}
 	.brand {
 		display: flex;
@@ -228,25 +206,14 @@
 		color: inherit;
 		text-decoration: none;
 	}
-	.mark {
-		width: 38px;
-		height: 38px;
-		display: grid;
-		place-items: center;
-		background: #bd5039;
-		color: white;
-		font:
-			14px Georgia,
-			serif;
-	}
 	.brand strong,
 	.brand small {
 		display: block;
 	}
 	.brand strong {
 		font:
-			600 15px Georgia,
-			serif;
+			600 15px Courier,
+			monospace;
 	}
 	.brand small {
 		font-size: 10px;
@@ -258,22 +225,17 @@
 		text-decoration: none;
 		font-size: 12px;
 	}
-	.about-link span,
-	.scroll-cue span {
-		color: #bd5039;
-		margin-left: 10px;
-	}
 	.intro {
 		min-height: 570px;
 		padding: 100px 11% 75px;
 		position: relative;
-		background: #e8e1d4;
+		background: var(--color-vintage-lavender);
 	}
 	.eyebrow {
 		font-size: 9px;
 		letter-spacing: 0.17em;
 		font-weight: bold;
-		color: #a44735;
+		color: var(--color-deep-space-blue);
 		margin: 0 0 20px;
 	}
 	.intro h1 {
@@ -284,7 +246,7 @@
 		margin: 0;
 	}
 	.intro h1 i {
-		color: #a44735;
+		color: var(--color-deep-space-blue);
 		font-weight: 400;
 	}
 	.intro-copy {
@@ -333,7 +295,7 @@
 	.chapter-count {
 		font-size: 9px;
 		letter-spacing: 0.16em;
-		color: #a44735;
+		color: var(--color-deep-space-blue);
 		margin-top: 34px;
 	}
 	.directory {
@@ -344,12 +306,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: end;
-		border-bottom: 1px solid #d9d3c7;
+		border-bottom: 1px solid var(--color-thistle);
 		padding-bottom: 20px;
 	}
-	.directory-head .eyebrow {
-		margin-bottom: 10px;
-	}
+
 	.directory-head h2 {
 		font:
 			38px Georgia,
@@ -358,7 +318,7 @@
 	}
 	.directory-head > span {
 		font-size: 12px;
-		color: #777;
+		color: var(--color-deep-space-blue);
 	}
 	.filters {
 		display: grid;
@@ -371,7 +331,7 @@
 		flex-direction: column;
 		gap: 7px;
 		font-size: 10px;
-		color: #767469;
+		color: var(--color-deep-space-blue);
 	}
 	.filters label:first-child {
 		grid-column: span 2;
@@ -379,14 +339,14 @@
 	.filters input,
 	.filters select {
 		font: 13px Arial;
-		border: 1px solid #d9d3c7;
+		border: 1px solid var(--color-thistle);
 		background: #fffdf8;
 		padding: 11px;
 		color: #333;
 		min-width: 0;
 	}
 	.place-grid {
-		border-top: 1px solid #ded9cf;
+		border-top: 1px solid var(--color-thistle);
 	}
 	.place-card {
 		width: 100%;
@@ -396,7 +356,7 @@
 		text-align: left;
 		padding: 16px 5px;
 		border: 0;
-		border-bottom: 1px solid #ded9cf;
+		border-bottom: 1px solid var(--color-thistle);
 		background: transparent;
 		cursor: pointer;
 		color: inherit;
@@ -419,13 +379,13 @@
 	}
 	.place-card small {
 		font-size: 10px;
-		color: #767469;
+		color: var(--color-deep-space-blue);
 		margin-top: 5px;
 	}
 	.place-card em {
 		font-style: normal;
 		font-size: 9px;
-		color: #a44735;
+		color: var(--color-deep-space-blue);
 		margin-top: 8px;
 	}
 	.place-dot {
@@ -434,7 +394,7 @@
 		flex: none;
 		border-radius: 50%;
 		margin-top: 5px;
-		background: #bd5039;
+		background: var(--color-indigo-velvet);
 	}
 	.place-dot[data-status='Present'] {
 		background: #16856b;
@@ -443,16 +403,7 @@
 		background: #7450b8;
 	}
 	.arrow {
-		color: #a44735;
-	}
-	footer {
-		padding: 24px 8%;
-		display: flex;
-		flex-direction: column;
-		gap: 8px;
-		font-size: 10px;
-		color: #777469;
-		border-top: 1px solid #d9d3c7;
+		color: var(--color-deep-space-blue);
 	}
 	@media (max-width: 760px) {
 		.topbar {

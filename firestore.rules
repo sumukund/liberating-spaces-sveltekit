@@ -1,0 +1,41 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Public map entries contain only editorial place information; no account data.
+    // Fields written by the app: Name, Type, Still_there_, Address, description,
+    // coordinates ([longitude, latitude]), and updatedAt (ISO date string).
+    function signedIn() {
+      return request.auth != null;
+    }
+
+    function validPlace(data) {
+      return data.keys().hasOnly([
+          'Name', 'Type', 'Still_there_', 'Address', 'description', 'coordinates', 'updatedAt'
+        ])
+        && data.keys().hasAll([
+          'Name', 'Type', 'Still_there_', 'Address', 'description', 'coordinates', 'updatedAt'
+        ])
+        && data.Name is string && data.Name.size() > 0 && data.Name.size() <= 200
+        && data.Type is string && data.Type.size() > 0 && data.Type.size() <= 100
+        && data.Still_there_ is string && data.Still_there_.size() > 0 && data.Still_there_.size() <= 40
+        && data.Address is string && data.Address.size() <= 500
+        && data.description is string && data.description.size() <= 5000
+        && data.coordinates is list && data.coordinates.size() == 2
+        && data.coordinates[0] is number && data.coordinates[0] >= -180 && data.coordinates[0] <= 180
+        && data.coordinates[1] is number && data.coordinates[1] >= -90 && data.coordinates[1] <= 90
+        && data.updatedAt is string && data.updatedAt.size() <= 40;
+    }
+
+    match /{document=**} {
+      allow read, write: if false;
+    }
+
+    match /mapResults/{placeId} {
+      allow get, list: if true;
+      allow create: if signedIn() && validPlace(request.resource.data);
+      allow update: if signedIn() && validPlace(request.resource.data);
+      allow delete: if false;
+    }
+  }
+}

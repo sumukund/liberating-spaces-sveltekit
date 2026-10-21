@@ -3,6 +3,13 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --color-brand-primary: #1E3A8A;
+    
+        /* CSS HSL */
+        --color-lavender-veil: hsla(279, 48%, 89%, 1);
+        --color-thistle: hsla(318, 21%, 78%, 1);
+        --color-vintage-lavender: hsla(296, 26%, 53%, 1);
+        --color-indigo-velvet: hsla(266, 39%, 31%, 1);
+        --color-deep-space-blue: hsla(207, 62%, 15%, 1);
+    
 }
 
