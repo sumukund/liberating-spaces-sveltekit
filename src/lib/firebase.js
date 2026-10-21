@@ -1,8 +1,8 @@
 import { writable } from 'svelte/store';
 
 const config = {
-	apiKey: import.meta.env.FIREBASE_API_KEY,
-	projectId: import.meta.env.FIREBASE_PROJECT_ID
+	apiKey: process.env.FIREBASE_API_KEY,
+	projectId: process.env.FIREBASE_PROJECT_ID
 };
 export const firebasePlaces = writable([]);
 export const firebaseConfigured = Object.values(config).every(Boolean);

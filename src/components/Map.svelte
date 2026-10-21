@@ -32,7 +32,7 @@
 			};
 			if (disposed) return;
 			LngLatBoundsClass = mapboxgl.LngLatBounds;
-			const token = import.meta.env.MAPBOX_API_KEY;
+			const token = process.env.MAPBOX_API_KEY;
 			if (!token) {
 				console.error('Mapbox API key is missing');
 				return;
