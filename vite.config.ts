@@ -5,12 +5,6 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	base: 'https://github.com/sumukund/liberating-spaces', // Replace with your exact GitHub repository name
-	optimizeDeps: {
-		exclude: ['mapbox-gl']
-	},
-	define: {
-  'process.env.MAPBOX_API_KEY': JSON.stringify(import.meta.env.MAPBOX_API_KEY),
-},
 	plugins: [
 		tailwindcss(),
 		sveltekit({
