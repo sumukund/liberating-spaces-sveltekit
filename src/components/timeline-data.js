@@ -3,12 +3,13 @@ export const timelineData = [
 	{
 		date: '1990-01-01',
 		label: 'Sample milestone · 1990',
-		description: 'Placeholder entry. Replace this with a verified Lake Street arts milestone.'
+		description: 'Placeholder entry. Lorem Ipsum', 
+		image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Placeholder_image.png/640px-Placeholder_image.png'
 	},
 	{
 		date: '2026-10-20',
 		label: 'Sample milestone · Today',
-		description:
-			'Placeholder entry for today. Replace this with a current, verified Lake Street arts milestone.'
+		description: 'Placeholder entry for today. Lorem Ipsum', 
+		image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Placeholder_image.png/640px-Placeholder_image.png'
 	}
 ];

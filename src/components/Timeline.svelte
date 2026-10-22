@@ -37,7 +37,7 @@
 		<h1 id="timeline-title">Lake Street arts<br /><i> historically.</i></h1>
 		<p class="intro">
 			A timeline for the people, places, and creative work shaping the corridor. The entries below
-			are placeholders until the history is researched.
+			are placeholders. Lorem Ipsum
 		</p>
 	</header>
 	<div class="timeline-layout">
@@ -68,6 +68,8 @@
 					<text x={xScale(item.date)} y={height / 2 + 42} text-anchor="middle" class="year"
 						>{item.date.getFullYear()}</text
 					>
+					<img src={item.image} alt="" width="0" height="0" style="display: none" />
+
 				{/each}
 			</svg>
 			<div class="graphic-caption">1990 <span>—</span> Today</div>
