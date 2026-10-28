@@ -2,6 +2,7 @@
 	import List from './List.svelte';
 	import Map from './Map.svelte';
 	import Timeline from './Timeline.svelte';
+	import Network from './Network.svelte';
 	import MapResultForm from './MapResultForm.svelte';
 </script>
 
@@ -11,8 +12,9 @@
 	<section class="form">	<MapResultForm />
 </section>
 </main>
+<section><Network /></section>
 
-<Timeline />
+<section><Timeline /></section>
 
 <style>
 	:global(*) { box-sizing: border-box; }
