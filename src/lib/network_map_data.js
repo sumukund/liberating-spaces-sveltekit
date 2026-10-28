@@ -55,7 +55,7 @@ export const pangea_structure = {
 				{
 					id: 'milkweed-maps',
 					name: 'Milkweed Maps',
-					active: true,
+                    active: true,
 					dates: [
 						{
 							start: '2020-01-01',
@@ -76,12 +76,24 @@ export const pangea_structure = {
 		{
 			id: 'nidec',
 			name: 'NIDEC',
-			active: true
+            active: true, 
+            collaborators: [
+                {
+                    id: 'art-2-action',
+                    name: 'Art2Action',
+                }
+            ]
 		},
 		{
 			id: 'liberating-spaces',
 			name: 'Liberating Spaces',
-			active: true
+            active: true, 
+            collaborators: [
+                {
+			id: 'lake-st-alignment',
+			name: 'Lake Street Alignment',
+		}
+            ]
 		}
 	],
 	collaborators: [
@@ -93,11 +105,6 @@ export const pangea_structure = {
 		{
 			id: 'art-2-action',
 			name: 'Art2Action',
-			active: true
-		},
-		{
-			id: 'teatro-del-pueblo',
-			name: 'Teatro del Pueblo',
 			active: true
 		},
 		{
@@ -113,30 +120,35 @@ export const pangea_structure = {
     ]
 };
 
-// export const tctocc_structure = {
-//     [{
-//         theater_name: "Pangea World Theater",
-//         demographic_served: "global",
-//         date_joined: "2021",
-//         programming: "?",
-//     }],
-
-//     [{  theater_name: "Teatro del Pueblo",
-//     demographic_served: "Latinx",
-//     date_joined: "2021",
-//     programming: "?"
-// }],
-//     [   theater_name: "New Native Theater",
-//     demographic_served: "Indigenous",
-//     date_joined: "2021",
-//     programming: "?"],
-//     [   theater_name: "Penumbra",
-//     demographic_served: "Black",
-//     date_joined: "2021",
-//     programming: "?"],
-//     [   theater_name: "Theater Mu",
-//     demographic_served: "Asian",
-//     date_joined: "2021",
-//     programming: "?"],
-
-// }
+export const tctocc_structure = [
+	{
+		theater_name: 'Pangea World Theater',
+		demographic_served: 'Decolonized',
+		date_joined: '2021',
+		programming: '?'
+	},
+	{
+		theater_name: 'Teatro del Pueblo',
+		demographic_served: 'Latinx',
+		date_joined: '2021',
+		programming: '?'
+	},
+	{
+		theater_name: 'New Native Theater',
+		demographic_served: 'Indigenous',
+		date_joined: '2021',
+		programming: '?'
+	},
+	{
+		theater_name: 'Penumbra Theatre',
+		demographic_served: 'Black / African American',
+		date_joined: '2021',
+		programming: '?'
+	},
+	{
+		theater_name: 'Theater Mu',
+		demographic_served: 'Asian American',
+		date_joined: '2021',
+		programming: '?'
+	}
+];
