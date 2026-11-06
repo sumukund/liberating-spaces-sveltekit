@@ -26,23 +26,38 @@
 	const chapters = [
 		{
 			id: 'all',
-			kicker: 'THE COLLECTION',
-			title: 'Art lives along Lake Street.',
-			text: 'A living map of the artists, gathering places, and cultural spaces shaping this corridor.',
+			kicker: 'liberating spaces',
+			title: 'How do we liberate a space? How do we democratize information?',
+			text: 'An interactive  map of the Lake Street Corridor. The map is constantly in progress, and represents not just Lake Street as we now know it, but also Lake Street as we remember it. We invite you to update and add points that are artistically significant. East Lake Street is a hub rich in history, culture, and art. Our collection includes the artists, the art, the gathering spaces, and the cultural centers that shape the corridor. ',
 			filter: (_p: Place) => true
 		},
 		{
+			id: 'gatherings',
+			kicker: 'Gathering places',
+			title: 'Community thrives together',
+			text: 'Community assemblies and meetings regularly take place in the shared spaces along the corridor, cementing Lake Street as a place for people to gather.  ',
+			filter: (p: Place) => /gatherings/i.test(p.properties.Type)
+		},
+				{
 			id: 'events',
-			kicker: 'Gatherings and Events',
-			title: 'Events bring people together.',
-			text: 'Performances, assemblies, and shared moments that made the street a place to gather.',
-			filter: (p: Place) => /event|performance/i.test(p.properties.Type)
+			kicker: 'Events',
+			title: 'Community thrives together',
+			text: 'Lake Street artists invite the wider community to witness the culminations of their projects through performances, showcases, and celebrations',
+			filter: (p: Place) => /event/i.test(p.properties.Type)
 		},
 		{
-			id: 'installations',
-			kicker: 'Public art and Installations',
+			id: 'public_art',
+			kicker: 'Public art',
 			title: 'Art changes how we see a place.',
-			text: 'Installations and public facing creative work, mapped where it meets the neighborhood.',
+			text: 'The corridor functions as a dynamic outdoor art gallery, displaying a wide array of public-facing work lining the street.',
+			filter: (p: Place) =>
+				/installation|sculpture|exhibition|public art|mural/i.test(p.properties.Type)
+		},
+				{
+			id: 'installations',
+			kicker: 'Installations',
+			title: 'Art for Lake Street',
+			text: 'The corridor functions as a dynamic outdoor art gallery, displaying a wide array of public-facing work lining the street.',
 			filter: (p: Place) =>
 				/installation|sculpture|exhibition|public art|mural/i.test(p.properties.Type)
 		},

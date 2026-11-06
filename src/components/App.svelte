@@ -14,9 +14,6 @@
 </div>
 	<div class="network"><Network /></div>
 
-<section><Timeline /></section>
-
-
 <style>
 	:global(*) { box-sizing: border-box; }
 	:global(html) { scroll-behavior: smooth; background: #f3efe7; }
