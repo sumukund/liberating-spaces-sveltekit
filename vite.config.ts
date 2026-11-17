@@ -1,13 +1,15 @@
 import tailwindcss from '@tailwindcss/vite';
 import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
-import { defineConfig } from 'vite';
+import { defineConfig, loadEnv } from 'vite';
 
-export default defineConfig({
+export default defineConfig(({ mode }) => {
+	const env = loadEnv(mode, process.cwd(), '');
+	return {
 	base: 'https://github.com/sumukund/liberating-spaces', // Replace with your exact GitHub repository name
 	define: {
-  'process.env.MAPBOX_API_KEY': JSON.stringify(process.env.MAPBOX_API_KEY),
-},
+		'process.env.MAPBOX_API_KEY': JSON.stringify(env.MAPBOX_API_KEY)
+	},
 	plugins: [
 		tailwindcss(),
 		sveltekit({
@@ -23,4 +25,5 @@ export default defineConfig({
 			adapter: adapter()
 		})
 	]
+  };
 });

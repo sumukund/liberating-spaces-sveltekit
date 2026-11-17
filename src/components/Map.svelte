@@ -10,6 +10,7 @@
 	let map: MapboxMapInstance;
 	let LngLatBoundsClass: typeof import('mapbox-gl').LngLatBounds;
 	let ready = $state(false);
+	let mapError = $state('');
 	let places = $state<Place[]>([]);
 	let selected: Place | null = $state(null);
 	let year = $state(2025);
@@ -42,6 +43,9 @@
 				return;
 			}
 			map = new mapboxgl.Map({ accessToken: token, container: mapElement, center: [-93.25, 44.948], zoom: 12.5, style: 'mapbox://styles/mapbox/light-v11' });
+			map.on('error', () => {
+				if (!ready) mapError = 'Mapbox could not load the map. Check the access token and map requests in the browser console.';
+			});
 			map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 			map.on('load', () => {
 				map.addSource('art-places', { type: 'geojson', data: { type: 'FeatureCollection', features: places } });
@@ -58,7 +62,7 @@
 </script>
 
 <aside class="map-column" aria-label="Interactive Lake Street map">
-	<div class="map-sticky"><div bind:this={mapElement} class="map" aria-label="Map of Lake Street locations"></div>{#if !ready}<div class="map-loading">Loading map…</div>{/if}{#if selected}<article class="popup"><button class="close" aria-label="Close details" onclick={() => selectedPlace.set(null)}>×</button><p class="eyebrow">{selected.properties.Type} · {selected.properties.Still_there_}</p><h2>{selected.properties.Name}</h2><p>{selected.properties.Address}</p></article>{/if}<div class="map-legend"><b>Current status</b><span><i class="present"></i>Present</span><span><i class="future"></i>Future</span><span><i class="past"></i>Past / Closed</span></div><div class="year-control"><label for="map-year"><span>Explore through</span><strong>{year}</strong></label><input id="map-year" type="range" min="1995" max="2025" step="1" value={year} oninput={(event) => activeYear.set(Number(event.currentTarget.value))} /><div class="year-range"><span>1995</span><span>2025</span></div></div><div class="map-caption">{visiblePlaces().length} locations through {year} <span>·</span> Lake Street, Minneapolis</div></div>
+	<div class="map-sticky"><div bind:this={mapElement} class="map" aria-label="Map of Lake Street locations"></div>{#if !ready}<div class="map-loading">{mapError || 'Loading map…'}</div>{/if}{#if selected}<article class="popup"><button class="close" aria-label="Close details" onclick={() => selectedPlace.set(null)}>×</button><p class="eyebrow">{selected.properties.Type} · {selected.properties.Still_there_}</p><h2>{selected.properties.Name}</h2><p>{selected.properties.Address}</p></article>{/if}<div class="map-legend"><b>Current status</b><span><i class="present"></i>Present</span><span><i class="future"></i>Future</span><span><i class="past"></i>Past / Closed</span></div><div class="year-control"><label for="map-year"><span>Explore through</span><strong>{year}</strong></label><input id="map-year" type="range" min="1995" max="2025" step="1" value={year} oninput={(event) => activeYear.set(Number(event.currentTarget.value))} /><div class="year-range"><span>1995</span><span>2025</span></div></div><div class="map-caption">{visiblePlaces().length} locations through {year} <span>·</span> Lake Street, Minneapolis</div></div>
 </aside>
 
 <style>
