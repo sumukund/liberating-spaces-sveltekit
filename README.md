@@ -61,4 +61,14 @@ In Firebase, enable Email/Password under Authentication and create an editor acc
 
 Timeline entries are in `src/components/timeline-data.js`. Add entries using the same `date`, `label`, and `description` fields.
 
+## Convert the map CSV to GeoJSON
+
+The source spreadsheet export is `src/lib/assets/updated lakestalignment.csv`. After adding or editing rows, regenerate GeoJSON with:
+
+```sh
+npm run csv-to-geojson -- "src/lib/assets/updated lakestalignment.csv" "src/lib/assets/Lake Street Art Map.geojson"
+```
+
+The converter reads the `properties.*` fields and `geometry.longitude` / `geometry.latitude` columns, writing coordinates in GeoJSON order (`[longitude, latitude]`). Rows without valid coordinates are skipped and reported. You can provide any CSV and output path; when the output path is omitted, it writes a `.geojson` file next to the CSV. The conversion helper is also exported as `csvToGeoJson` from `scripts/csv-to-geojson.js` for reuse in Node code.
+
 > To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.

@@ -1,12 +1,6 @@
 {
   "type": "FeatureCollection",
   "name": "Lake Street Art Map",
-  "crs": {
-    "type": "name",
-    "properties": {
-      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
-    }
-  },
   "features": [
     {
       "type": "Feature",
@@ -18,8 +12,7 @@
         "Year": "2005",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1047,8 +1040,7 @@
         "Year": "2023",
         "Address": "35W Transit Station, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1068,8 +1060,7 @@
         "Year": "2002",
         "Address": "11 East Lake St, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1089,8 +1080,7 @@
         "Year": "2022",
         "Address": "301 E Lake St, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1110,8 +1100,7 @@
         "Year": "2022",
         "Address": "301 E Lake St, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1131,8 +1120,7 @@
         "Year": "2022",
         "Address": "2932 Clinton Ave, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1152,8 +1140,7 @@
         "Year": "2000",
         "Address": "417 E Lake St, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1173,8 +1160,7 @@
         "Year": "2023",
         "Address": "515 E Lake St, Minneapolis, MN 55408",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1194,8 +1180,7 @@
         "Year": "2021",
         "Address": "720 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1215,8 +1200,7 @@
         "Year": "2019",
         "Address": "740 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1236,8 +1220,7 @@
         "Year": "2023",
         "Address": "740 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1257,8 +1240,7 @@
         "Year": "2021",
         "Address": "818 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1278,8 +1260,7 @@
         "Year": "2022",
         "Address": "825 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1299,8 +1280,7 @@
         "Year": "2020",
         "Address": "1001 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1320,8 +1300,7 @@
         "Year": "2023",
         "Address": "2965 11th Ave S, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1341,8 +1320,7 @@
         "Year": "2020",
         "Address": "1112 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1362,8 +1340,7 @@
         "Year": "2018",
         "Address": "1200 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1383,8 +1360,7 @@
         "Year": "2018",
         "Address": "2939 12th Ave S, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1404,8 +1380,7 @@
         "Year": "2023",
         "Address": "1201 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1425,8 +1400,7 @@
         "Year": "2023",
         "Address": "1201 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1446,8 +1420,7 @@
         "Year": "2023",
         "Address": "1229 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1467,8 +1440,7 @@
         "Year": "2023",
         "Address": "1304 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1488,8 +1460,7 @@
         "Year": "2022",
         "Address": "1401 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1509,8 +1480,7 @@
         "Year": "2021",
         "Address": "1410 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1530,8 +1500,7 @@
         "Year": "2021",
         "Address": "1417 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1551,8 +1520,7 @@
         "Year": "2023",
         "Address": "1426 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1572,8 +1540,7 @@
         "Year": "2023",
         "Address": "1515 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1593,8 +1560,7 @@
         "Year": "2024",
         "Address": "1511 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1614,8 +1580,7 @@
         "Year": "2018",
         "Address": "1515 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1635,8 +1600,7 @@
         "Year": "2022",
         "Address": "1522 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1656,8 +1620,7 @@
         "Year": "2013",
         "Address": "1522 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1677,8 +1640,7 @@
         "Year": "2021",
         "Address": "1527 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1698,8 +1660,7 @@
         "Year": "2023",
         "Address": "1552 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1719,8 +1680,7 @@
         "Year": "2018",
         "Address": "1545 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1740,8 +1700,7 @@
         "Year": "2019",
         "Address": "1601 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1761,8 +1720,7 @@
         "Year": "2022",
         "Address": "1623 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1782,8 +1740,7 @@
         "Year": "2018",
         "Address": "1837 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1803,8 +1760,7 @@
         "Year": "2022",
         "Address": "1841 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1824,8 +1780,7 @@
         "Year": "2023",
         "Address": "1843 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1845,8 +1800,7 @@
         "Year": "2021",
         "Address": "1855 E Lake St, Minneapolis, MN 55407",
         "Type": "Mural",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -1866,14 +1820,33 @@
         "Year": "2007",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -93.28852,
           44.94832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "A Disease Called Freedom",
+        "description": "Avalon Theater",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2007",
+        "Address": "1500 E Lake St, Minneapolis, MN 55407",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2535216,
+          44.9486256
         ]
       }
     },
@@ -1887,14 +1860,73 @@
         "Year": "2007",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "I Land Indigenous Voices",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2008",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Indigenous Voices",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2010",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Curiosities",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2010",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
         ]
       }
     },
@@ -1908,14 +1940,13 @@
         "Year": "2010",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
         ]
       }
     },
@@ -1929,14 +1960,13 @@
         "Year": "2010",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
         ]
       }
     },
@@ -1950,14 +1980,33 @@
         "Year": "2011",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hmong Bollywood",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2013",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
         ]
       }
     },
@@ -1971,14 +2020,33 @@
         "Year": "2013",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Hmong Bollywood",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2013",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
         ]
       }
     },
@@ -1992,14 +2060,13 @@
         "Year": "2015",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
         ]
       }
     },
@@ -2013,14 +2080,53 @@
         "Year": "2015",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Conference Of The Birds",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2016",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Sabra Falling",
+        "description": "Avalon Theater",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2017",
+        "Address": "1500 E Lake St, Minneapolis, MN 55407",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2535216,
+          44.9486256
         ]
       }
     },
@@ -2034,14 +2140,33 @@
         "Year": "2018",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Performance",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Name": "Taco Truck Theater Theatro Sin Fronteras Radical Theater On Wheels",
+        "description": "Intermedia Arts",
+        "visibility": "",
+        "Artist": "",
+        "Year": "2018",
+        "Address": "2822 Lyndale Ave S, Minneapolis, MN 55408",
+        "Type": "Performance",
+        "Image": ""
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -93.2885848,
+          44.9510735
         ]
       }
     },
@@ -2055,14 +2180,13 @@
         "Year": "2019",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Event",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
         ]
       }
     },
@@ -2076,14 +2200,13 @@
         "Year": "2025",
         "Address": "711 W Lake St, Minneapolis, MN, 55408",
         "Type": "Event",
-        "Image": "",
-        "Still_there_": ""
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -93.28852,
-          44.94832
+          -93.2888207,
+          44.9480795
         ]
       }
     }

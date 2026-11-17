@@ -1,6 +1,5 @@
 type,properties.Name,properties.description,properties.visibility,properties.Artist,properties.Year,properties.Address,properties.Type,properties.Image,geometry.type,geometry.longitude,geometry.latitude
 Feature,Truth Serum Blues ,,-1,"Ismail Khalidi, Bassam Jarbawi",2005,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,,,-1,,,,,,Point,,
 Feature,COPAL,"Type: Cultural Organization<br>Still there?: Future<br>Address: 2905 E Lake St, Minneapolis, MN 55406",-1,,2018,"2905 E Lake St, Minneapolis, MN 55406",Cultural Organization,,Point,-93.22894,44.94852
 Feature,El Nuevo Rodeo,"Type: Entertainment<br>Still there?: Gone<br>Address: 2709 E Lake St, Minneapolis, MN 55406",-1,Maya Santamaria,2003,"2709 E Lake St, Minneapolis, MN 55406",Entertainment,,Point,-93.23432,44.94853
 Feature,Hook & Ladder Theater,"Type: Entertainment<br>Still there?: Present<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406",-1,Firehouse Performing Arts Center,2016,"3010 Minnehaha Ave, Minneapolis, MN 55406",Entertainment,,Point,-93.23652,44.94691
@@ -89,22 +88,22 @@ Feature,Untitled / Osoy Health Health,"Artist: Daren Scott Hill, 2022<br>Address
 Feature,Untitled / Mattress Plus Furniture,"Artist: Daren Scott Hill & Tom Jay, 2023<br>Address: 1843 E Lake St, Minneapolis, MN 55407",-1,Daren Scott Hill & Tom Jay,2023,"1843 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.23981,44.94851
 Feature,Me abrazo a tu ausencia,"Artist: Copla Murals, 2021<br>Address: 1855 E Lake St, Minneapolis, MN 55407",-1,Copla Murals,2021,"1855 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.23911,44.94851
 Feature,Cooking Con Karimi  ,Pangea,,,2007,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,A Disease Called Freedom ,Avalon Theater,,,2007,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,,
-Feature,Personal Effects ,Pangea,,,2007,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,I Land Indigenous Voices ,Intermedia Arts,,,2008,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Indigenous Voices ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Curiosities ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Body Talk  ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Solo Flight ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Eleven Reflections On September  ,Pangea,,,2011,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Hmong Bollywood  ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,My Love Has No Tongue  ,Pangea,,,2013,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Hmong Bollywood ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Porning The Planet  ,Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,"Race, History, and the Body  ",Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Conference Of The Birds ,Intermedia Arts,,,2016,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Sabra Falling  ,Avalon Theater,,,2017,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,,
-Feature,Land: Landed  ,Pangea,,,2018,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
-Feature,Taco Truck Theater Theatro Sin Fronteras Radical Theater On Wheels ,Intermedia Arts,,,2018,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
-Feature,Indigenous Voices Festival  ,Pangea,,,2019,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.28852,44.94832
-Feature,Milkweed Maps Festival of New Works  ,Pangea,,,2025,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.28852,44.94832
+Feature,A Disease Called Freedom ,Avalon Theater,,,2007,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,-93.2535216,44.9486256
+Feature,Personal Effects ,Pangea,,,2007,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,I Land Indigenous Voices ,Intermedia Arts,,,2008,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Indigenous Voices ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Curiosities ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Body Talk  ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Solo Flight ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Eleven Reflections On September  ,Pangea,,,2011,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Hmong Bollywood  ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,My Love Has No Tongue  ,Pangea,,,2013,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Hmong Bollywood ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Porning The Planet  ,Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,"Race, History, and the Body  ",Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Conference Of The Birds ,Intermedia Arts,,,2016,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Sabra Falling  ,Avalon Theater,,,2017,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,-93.2535216,44.9486256
+Feature,Land: Landed  ,Pangea,,,2018,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.2888207,44.9480795
+Feature,Taco Truck Theater Theatro Sin Fronteras Radical Theater On Wheels ,Intermedia Arts,,,2018,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,-93.2885848,44.9510735
+Feature,Indigenous Voices Festival  ,Pangea,,,2019,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.2888207,44.9480795
+Feature,Milkweed Maps Festival of New Works  ,Pangea,,,2025,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.2888207,44.9480795
