@@ -5,3 +5,5 @@ export const activePlaces = writable([]);
 export const selectedPlace = writable(null);
 export const focusPlace = writable(null);
 export const activeChapter = writable(0);
+// Latest year is selected by default; map features without a known year remain visible.
+export const activeYear = writable(2025);

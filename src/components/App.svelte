@@ -1,9 +1,9 @@
 <script lang="ts">
 	import List from './List.svelte';
 	import Map from './Map.svelte';
-	import Timeline from './Timeline.svelte';
 	import Network from './Network.svelte';
 	import MapResultForm from './MapResultForm.svelte';
+	import Individuals from './Individuals.svelte';
 </script>
 
 <div class="map-page">
@@ -13,12 +13,13 @@
 
 </div>
 	<div class="network"><Network /></div>
+	<div class='network'><Individuals /></div>
 
 <style>
 	:global(*) { box-sizing: border-box; }
 	:global(html) { scroll-behavior: smooth; background: #f3efe7; }
 	:global(body) { margin: 0; color: #252922; font-family: 'Courier New', Courier, monospace; }
-	.network { max-width: 1600px; max-height: auto; margin: auto; display: flex; background:  #f3efe7;  }
+	.network { max-width: 928px; max-height: auto; margin: auto; display: flex; background:  #f3efe7;  }
 
 	.map-page { max-width: 1600px; margin: auto; display: grid; grid-template-columns: 40% 60%; align-items: stretch; background: #f3efe7; }
 	.pane { min-width: 0; }

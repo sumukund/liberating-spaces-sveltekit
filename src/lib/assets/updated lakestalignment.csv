@@ -1,0 +1,110 @@
+type,properties.Name,properties.description,properties.visibility,properties.Artist,properties.Year,properties.Address,properties.Type,properties.Image,geometry.type,geometry.longitude,geometry.latitude
+Feature,Truth Serum Blues ,,-1,"Ismail Khalidi, Bassam Jarbawi",2005,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,,,-1,,,,,,Point,,
+Feature,COPAL,"Type: Cultural Organization<br>Still there?: Future<br>Address: 2905 E Lake St, Minneapolis, MN 55406",-1,,2018,"2905 E Lake St, Minneapolis, MN 55406",Cultural Organization,,Point,-93.22894,44.94852
+Feature,El Nuevo Rodeo,"Type: Entertainment<br>Still there?: Gone<br>Address: 2709 E Lake St, Minneapolis, MN 55406",-1,Maya Santamaria,2003,"2709 E Lake St, Minneapolis, MN 55406",Entertainment,,Point,-93.23432,44.94853
+Feature,Hook & Ladder Theater,"Type: Entertainment<br>Still there?: Present<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406",-1,Firehouse Performing Arts Center,2016,"3010 Minnehaha Ave, Minneapolis, MN 55406",Entertainment,,Point,-93.23652,44.94691
+Feature,Facing the Fire,"Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406",-1,Paul Herwig,2022,"3000 Minnehaha Ave, Minneapolis, MN 55406",Event,,Point,-93.23654,44.94723
+Feature,The Muatas/Hook & Ladder,"Type: Performance<br>Still there?: Past<br>Address: 3010 Minnehaha Ave, Minneapolis, MN 55406",-1,The Muatas,2023,"3010 Minnehaha Ave, Minneapolis, MN 55406",Performance,,Point,-93.23652,44.94691
+Feature,Neighbor Assembly/Confluence,"Type: Event<br>Still there?: Past<br>Address: 3000 Minnehaha Ave, Minneapolis, MN 55406",-1,,2023,"3000 Minnehaha Ave, Minneapolis, MN 55406",Event,,Point,-93.23654,44.94723
+Feature,Confluence Studio,"Type: Art Organization<br>Still there?: Present<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406",-1,,2020,"3032 Minnehaha Ave, Minneapolis, MN 55406",Art Organization,,Point,-93.23651,44.94623
+Feature,Life Born of Fire,"Type: Event<br>Still there?: Past<br>Address: 3032 Minnehaha Ave, Minneapolis, MN 55406",-1,Pangea,2022,"3032 Minnehaha Ave, Minneapolis, MN 55406",Performance,,Point,-93.23651,44.94623
+Feature,Modus Locus,"Type: Gallery<br>Still there?: Present<br>Address: 3500 Bloomington Ave, Minneapolis, MN 55407",-1,Ephraim Eusebio,2014,"3500 Bloomington Ave, Minneapolis, MN 55407",Gallery,,Point,-93.25996,44.93922
+Feature,Neighbor Assembly/Confluence,"Type: Event<br>Still there?: Present<br>Address: 3104 16th Ave S, Minneapolis, MN 55407",-1,,2024,"3104 16th Ave S, Minneapolis, MN 55407",Event,,Point,-93.25143,44.94532
+Feature,Beyond Repair,"Type: Store<br>Still there?: Gone<br>Address: 920 E Lake St, Minneapolis, MN 55407",-1,Sam Gould,2016,"920 E Lake St, Minneapolis, MN 55407",Store,,Point,-93.26252,44.94851
+Feature,Midtown Global Market,"Type: Market<br>Still there?: Present<br>Address: 920 E Lake St, Minneapolis, MN 55407",-1,,2006,"920 E Lake St, Minneapolis, MN 55407",Market,,Point,-93.26252,44.94851
+Feature,Roberts Annex,"Type: Community Center<br>Still there?: Gone<br>Address: 730 E Lake St, Minneapolis, MN 55407",-1,,2020,"730 E Lake St, Minneapolis, MN 55407",Community Center,,Point,-93.26621,44.94851
+Feature,Healing Aqal,"Type: Installation<br>Still there?: Past<br>Address: E Lake St & Chicago Ave, Minneapolis, MN 55407",-1,Ifrah Monsour,2020,"E Lake St & Chicago Ave, Minneapolis, MN 55407",Installation,,Point,-93.26042,44.94851
+Feature,Assembly-Beyond Repair,"Type: Event<br>Still there?: Past<br>Address: 2848 Columbus Ave S, Minneapolis, MN 55407",-1,,,"2848 Columbus Ave S, Minneapolis, MN 55407",Event,,Point,-93.26871,44.94951
+Feature,Strength in Unity,"Type: Sculpture<br>Still there?: Present<br>Address: 2929 E 29th St, Minneapolis, MN 55408",-1,"Maria Tina Tavera, Xavier Tavera",2023,"2929 E 29th St, Minneapolis, MN 55408",Sculpture,,Point,-93.23841,44.94912
+Feature,LynLake Street Art Series/Legacy Glassworks,"Type: Event<br>Still there?: Past<br>Address: 2928 Lyndale Ave S, Minneapolis, MN 55408",-1,Josh Wilken-Simons,2018,"2928 Lyndale Ave S, Minneapolis, MN 55408",Event,,Point,-93.28821,44.94921
+Feature,Pangea World Theater,"Type: Art Organization<br>Still there?: Present<br>Address: 711 W Lake St, Minneapolis, MN 55408",-1,"Dipankar Mukherjee, Meena Natarajan, Keith Lee, Kathy Haddad, Luu Pham",1995,"711 W Lake St, Minneapolis, MN 55408",Art Organization,,Point,-93.28852,44.94832
+Feature,The Muatas/Pangea,"Type: Performance<br>Still there?: Past<br>Address: 711 W Lake St, Minneapolis, MN 55408",-1,The Muatas,2020,"711 W Lake St, Minneapolis, MN 55408",Performance,,Point,-93.28852,44.94832
+Feature,Buffalo Show,"Type: Performance<br>Still there?: Past<br>Address: E Lake St & Bryant Ave S, Minneapolis, MN 55408",-1,,,"E Lake St & Bryant Ave S, Minneapolis, MN 55408",Performance,,Point,-93.28621,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 721 W Lake Street, Minneapolis, MN 55408",-1,,,"721 W Lake Street, Minneapolis, MN 55408",Installation,,Point,-93.28891,44.94832
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 821 W Lake St, Minneapolis, MN 55408",-1,,,"821 W Lake St, Minneapolis, MN 55408",Installation,,Point,-93.29051,44.94832
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 1522 E Lake St, Minneapolis, MN 55407",-1,,,"1522 E Lake St, Minneapolis, MN 55407",Installation,,Point,-93.25052,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 1601 E Lake St, Minneapolis, MN 55407",-1,,,"1601 E Lake St, Minneapolis, MN 55407",Installation,,Point,-93.24912,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 1703 E Lake St, Minneapolis, MN 55407",-1,,,"1703 E Lake St, Minneapolis, MN 55407",Installation,,Point,-93.24711,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 1821 E Lake St, Minneapolis, MN 55407",-1,,,"1821 E Lake St, Minneapolis, MN 55407",Installation,,Point,-93.24491,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3016 Minnehaha Ave, Minneapolis, MN 55406",-1,,,"3016 Minnehaha Ave, Minneapolis, MN 55406",Installation,,Point,-93.23651,44.94672
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 2727 E Lake St, Minneapolis, MN 55406",-1,,,"2727 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.23391,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 2910 E Lake St, Minneapolis, MN 55406",-1,,,"2910 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.23011,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3601 E Lake St, Minneapolis, MN 55406",-1,,,"3601 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.22011,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3815 E Lake St, Minneapolis, MN 55406",-1,,,"3815 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.21611,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3820 E Lake St, Minneapolis, MN 55406",-1,,,"3820 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.21591,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 4646 E Lake St, Minneapolis, MN 55406",-1,,,"4646 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.20191,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3822 E Lake St, Minneapolis, MN 55406",-1,,,"3822 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.21551,44.94851
+Feature,Poetry in the Windows/Pangea,"Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406",-1,,,"3009 27th Ave S, Minneapolis, MN 55406",Installation,,Point,-93.23412,44.94551
+Feature,Metamorphosis,"Type: Installation<br>Still there?: Past<br>Address: 3009 27th Ave S, Minneapolis, MN 55406",-1,,,"3009 27th Ave S, Minneapolis, MN 55406",Installation,,Point,-93.23412,44.94551
+Feature,Colors of Lake Street,"Type: Installation<br>Still there?: Past<br>Address: 920 E Lake St, Minneapolis, MN 55407",-1,,,"920 E Lake St, Minneapolis, MN 55407",Installation,,Point,-93.26252,44.94851
+Feature,Transition Stage,"Type: Installation<br>Still there?: Past<br>Address: 2613 E Lake St, Minneapolis, MN 55406",-1,,,"2613 E Lake St, Minneapolis, MN 55406",Installation,,Point,-93.23611,44.94851
+Feature,Save the Boards Street Art/Coliseum Building,"Type: Exhibition<br>Still there?: Present<br>Address: 2708 E Lake St, Minneapolis, MN 55406",-1,,,"2708 E Lake St, Minneapolis, MN 55406",Exhibition,,Point,-93.23431,44.94851
+Feature,Memorialize the Movement,"Type: Gallery<br>Still there?: Present<br>Address: 3140 Snelling Ave, Minneapolis, MN 55406",-1,,,"3140 Snelling Ave, Minneapolis, MN 55406",Gallery,,Point,-93.24411,44.94491
+Feature,HOTB puppet library/Avalon Theater,"Type: Art Organization<br>Still there?: Present<br>Address: 1500 E Lake St, Minneapolis, MN 55407",-1,,,"1500 E Lake St, Minneapolis, MN 55407",Art Organization,,Point,-93.25091,44.94851
+Feature,LSA! workshops/Mudluk,"Type: Art Organization<br>Still there?: Present<br>Address: 2951 Bloomington Ave, Minneapolis, MN 55407",-1,,,"2951 Bloomington Ave, Minneapolis, MN 55407",Art Organization,,Point,-93.25991,44.94911
+Feature,Mudluk Pottery,"Type: Gallery<br>Still there?: Present<br>Address: 2952 Bloomington Ave, Minneapolis, MN 55407",-1,,,"2952 Bloomington Ave, Minneapolis, MN 55407",Gallery,,Point,-93.25991,44.94901
+Feature,Hijinks Stilts 2023/Powderhorn Park,"Type: Event<br>Still there?: Past<br>Address: 3400 15th Ave S, Minneapolis, MN 55407",-1,,,"3400 15th Ave S, Minneapolis, MN 55407",Event,,Point,-93.25311,44.94111
+Feature,Jungle Theater,"Type: Art Organization<br>Still there?: Present<br>Address: 2951 Lyndale Ave S, Minneapolis, MN 55408",-1,,,"2951 Lyndale Ave S, Minneapolis, MN 55408",Art Organization,,Point,-93.28821,44.94911
+Feature,Buffalo Show/ Oyate Hotanin/ Bryant Lake Bowl,"Type: Event<br>Still there?: Past<br>Address: 810 W Lake St, Minneapolis, MN 55408",-1,,,"810 W Lake St, Minneapolis, MN 55408",Event,,Point,-93.29011,44.94832
+Feature,Soo Visual Arts Center,"Type: Art Organization<br>Still there?: Present<br>Address: 2909 Bryant Ave S, Minneapolis, MN 55408",-1,,,"2909 Bryant Ave S, Minneapolis, MN 55408",Art Organization,,Point,-93.28621,44.94951
+Feature,Highpoint Center for Printmaking,"Type: Art Organization<br>Still there?: Present<br>Address: 912 W Lake St, Minneapolis, MN 55408",-1,,,"912 W Lake St, Minneapolis, MN 55408",Art Organization,,Point,-93.29211,44.94832
+Feature,Untitled,"Artist: Kada Goalan & Stacia Goodman, 2023<br>Address: 35W Transit Station, Minneapolis, MN 55408",-1,Kada Goalan & Stacia Goodman,2023,"35W Transit Station, Minneapolis, MN 55408",Mural,,Point,-93.27311,44.94851
+Feature,En Buscan,"Artist: Trujillo Collective, 2002<br>Address: 11 East Lake St, Minneapolis, MN 55408",-1,Trujillo Collective,2002,"11 East Lake St, Minneapolis, MN 55408",Mural,,Point,-93.27351,44.94851
+Feature,Chichén Itzá / Mayan Calendar,"Artist: Victor Yepez, 2022<br>Address: 301 E Lake St, Minneapolis, MN 55408",-1,Victor Yepez,2022,"301 E Lake St, Minneapolis, MN 55408",Mural,,Point,-93.27211,44.94851
+Feature,Somalia Landscape,"Artist: Victor Yepez, 2022<br>Address: 301 E Lake St, Minneapolis, MN 55408",-1,Victor Yepez,2022,"301 E Lake St, Minneapolis, MN 55408",Mural,,Point,-93.27211,44.94851
+Feature,The Healer,"Artist: Gustavo Lira & Tierra Diaz Xilam Balam, 2022<br>Address: 2932 Clinton Ave, Minneapolis, MN 55407",-1,Gustavo Lira & Tierra Diaz Xilam Balam,2022,"2932 Clinton Ave, Minneapolis, MN 55407",Mural,,Point,-93.26611,44.94931
+Feature,Untitled,"Artist: Unknown Artist, 2000<br>Address: 417 E Lake St, Minneapolis, MN 55408",-1,Unknown Artist,2000,"417 E Lake St, Minneapolis, MN 55408",Mural,,Point,-93.26811,44.94851
+Feature,Diversidad,"Artist: Victor Yepez & Karen Cisneros, 2023<br>Address: 515 E Lake St, Minneapolis, MN 55408",-1,Victor Yepez & Karen Cisneros,2023,"515 E Lake St, Minneapolis, MN 55408",Mural,,Point,-93.26651,44.94851
+Feature,Untitled,"Artist: Melodee Strong, 2021<br>Address: 720 E Lake St, Minneapolis, MN 55407",-1,Melodee Strong,2021,"720 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.26621,44.94851
+Feature,Untitled (Lower),"Artist: Black Daze, 2019<br>Address: 740 E Lake St, Minneapolis, MN 55407",-1,Black Daze,2019,"740 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.26551,44.94851
+Feature,Untitled (Upper),"Artist: Biafra, 2023<br>Address: 740 E Lake St, Minneapolis, MN 55407",-1,Biafra,2023,"740 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.26551,44.94851
+Feature,Untitled / Hamdi Restaurant,"Artist: Melodee Strong, 2021<br>Address: 818 E Lake St, Minneapolis, MN 55407",-1,Melodee Strong,2021,"818 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.26351,44.94851
+Feature,The Charging of Lake Street,"Artist: Greg Gossel, 2022<br>Address: 825 E Lake St, Minneapolis, MN 55407",-1,Greg Gossel,2022,"825 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.26321,44.94851
+Feature,Nanaandawi (to heal),"Artist: City Mischief Murals, 2020<br>Address: 1001 E Lake St, Minneapolis, MN 55407",-1,City Mischief Murals,2020,"1001 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25951,44.94851
+Feature,Cultivating Collaborative Communities,"Artist: Modern Day Me, ft. Tom Janssen, 2023<br>Address: 2965 11th Ave S, Minneapolis, MN 55407",-1,"Modern Day Me, ft. Tom Janssen",2023,"2965 11th Ave S, Minneapolis, MN 55407",Mural,,Point,-93.25911,44.94911
+Feature,"Ven, Seremos","Artist: Copla Murals, 2020<br>Address: 1112 E Lake St, Minneapolis, MN 55407",-1,Copla Murals,2020,"1112 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25751,44.94851
+Feature,Our Lake Street Loves,"Artist: Good Space Murals, 2018<br>Address: 1200 E Lake St, Minneapolis, MN 55407",-1,Good Space Murals,2018,"1200 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25551,44.94851
+Feature,Southside (Re) Cycles,"Artist: Olivia Levins Holden, Tori Hong & Reggie LeFlore, 2018<br>Address: 2939 12th Ave S, Minneapolis, MN 55407",-1,"Olivia Levins Holden, Tori Hong & Reggie LeFlore",2018,"2939 12th Ave S, Minneapolis, MN 55407",Mural,,Point,-93.25611,44.94931
+Feature,Mi Barrio Project,"Artist: Pablo Kalaka, 2023<br>Address: 1201 E Lake St, Minneapolis, MN 55407",-1,Pablo Kalaka,2023,"1201 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25531,44.94851
+Feature,Hooyo (Mom),"Artist: Pablo Kalaka, 2023<br>Address: 1201 E Lake St, Minneapolis, MN 55407",-1,Pablo Kalaka,2023,"1201 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25531,44.94851
+Feature,Untitled,"Artist: Melodee Strong, 2023<br>Address: 1229 E Lake St, Minneapolis, MN 55407",-1,Melodee Strong,2023,"1229 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25411,44.94851
+Feature,Procesión,"Artist: Pablo Kalaka, 2023<br>Address: 1304 E Lake St, Minneapolis, MN 55407",-1,Pablo Kalaka,2023,"1304 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25251,44.94851
+Feature,Untitled / Lake Street Laundry,"Artist: Miskitoos & El Niño Perdido, 2022<br>Address: 1401 E Lake St, Minneapolis, MN 55407",-1,Miskitoos & El Niño Perdido,2022,"1401 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25111,44.94851
+Feature,Dignified Housing / Vivienda Digna,"Artist: Sky Without Limits Cooperative, 2021<br>Address: 1410 E Lake St, Minneapolis, MN 55407",-1,Sky Without Limits Cooperative,2021,"1410 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25051,44.94851
+Feature,Untitled / Supermercado Morelia,"Artist: Rodrigo Oñate, 2021<br>Address: 1417 E Lake St, Minneapolis, MN 55407",-1,Rodrigo Oñate,2021,"1417 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.25011,44.94851
+Feature,Untitled,"Artist: Melodee Strong, 2023<br>Address: 1426 E Lake St, Minneapolis, MN 55407",-1,Melodee Strong,2023,"1426 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24951,44.94851
+Feature,Frida,"Artist: Copla Murals, 2023<br>Address: 1515 E Lake St, Minneapolis, MN 55407",-1,Copla Murals,2023,"1515 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24751,44.94851
+Feature,Untitled / Taco Taxi,"Artist: Pablo Kalaka, 2024<br>Address: 1511 E Lake St, Minneapolis, MN 55407",-1,Pablo Kalaka,2024,"1511 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24781,44.94851
+Feature,Todos Vuelven,"Artist: Pablo Kalaka, 2018<br>Address: 1515 E Lake St, Minneapolis, MN 55407",-1,Pablo Kalaka,2018,"1515 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24751,44.94851
+Feature,Los Ancestros / Wichahunkaka,"Artist: Copla Murals, 2022<br>Address: 1522 E Lake St, Minneapolis, MN 55407",-1,Copla Murals,2022,"1522 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24711,44.94851
+Feature,Juntos Crecemos / Together We Grow,"Artist: Greta McLain, 2013<br>Address: 1522 E Lake St, Minneapolis, MN 55407",-1,Greta McLain,2013,"1522 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24711,44.94851
+Feature,Untitled / Family Partnership,"Artist: City Mischief Murals, 2021<br>Address: 1527 E Lake St, Minneapolis, MN 55407",-1,City Mischief Murals,2021,"1527 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24681,44.94851
+Feature,Life Representation of Diversity,"Artist: Abdifatah Osman, 2023<br>Address: 1552 E Lake St, Minneapolis, MN 55407",-1,Abdifatah Osman,2023,"1552 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24611,44.94851
+Feature,Untitled / Degan Childcare,"Artist: Reggie LeFlore, 2018<br>Address: 1545 E Lake St, Minneapolis, MN 55407",-1,Reggie LeFlore,2018,"1545 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24631,44.94851
+Feature,Untitled / Ingebretsen's,"Artist: Judith Nelson Kjervlad, 2019<br>Address: 1601 E Lake St, Minneapolis, MN 55407",-1,Judith Nelson Kjervlad,2019,"1601 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24511,44.94851
+Feature,Untitled / Panaderia San Miguel,"Artist: Charles Garcia, 2022<br>Address: 1623 E Lake St, Minneapolis, MN 55407",-1,Charles Garcia,2022,"1623 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24451,44.94851
+Feature,Untitled / Ayeeyo Childcare Center,"Artist: Biafra, 2018<br>Address: 1837 E Lake St, Minneapolis, MN 55407",-1,Biafra,2018,"1837 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24051,44.94851
+Feature,Untitled / Osoy Health Health,"Artist: Daren Scott Hill, 2022<br>Address: 1841 E Lake St, Minneapolis, MN 55407",-1,Daren Scott Hill,2022,"1841 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.24011,44.94851
+Feature,Untitled / Mattress Plus Furniture,"Artist: Daren Scott Hill & Tom Jay, 2023<br>Address: 1843 E Lake St, Minneapolis, MN 55407",-1,Daren Scott Hill & Tom Jay,2023,"1843 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.23981,44.94851
+Feature,Me abrazo a tu ausencia,"Artist: Copla Murals, 2021<br>Address: 1855 E Lake St, Minneapolis, MN 55407",-1,Copla Murals,2021,"1855 E Lake St, Minneapolis, MN 55407",Mural,,Point,-93.23911,44.94851
+Feature,Cooking Con Karimi  ,Pangea,,,2007,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,A Disease Called Freedom ,Avalon Theater,,,2007,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,,
+Feature,Personal Effects ,Pangea,,,2007,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,I Land Indigenous Voices ,Intermedia Arts,,,2008,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Indigenous Voices ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Curiosities ,Intermedia Arts,,,2010,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Body Talk  ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Solo Flight ,Pangea,,,2010,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Eleven Reflections On September  ,Pangea,,,2011,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Hmong Bollywood  ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,My Love Has No Tongue  ,Pangea,,,2013,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Hmong Bollywood ,Intermedia Arts,,,2013,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Porning The Planet  ,Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,"Race, History, and the Body  ",Pangea,,,2015,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Conference Of The Birds ,Intermedia Arts,,,2016,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Sabra Falling  ,Avalon Theater,,,2017,"1500 E Lake St, Minneapolis, MN 55407",Performance,,Point,,
+Feature,Land: Landed  ,Pangea,,,2018,"711 W Lake St, Minneapolis, MN, 55408",Performance,,Point,-93.28852,44.94832
+Feature,Taco Truck Theater Theatro Sin Fronteras Radical Theater On Wheels ,Intermedia Arts,,,2018,"2822 Lyndale Ave S, Minneapolis, MN 55408",Performance,,Point,,
+Feature,Indigenous Voices Festival  ,Pangea,,,2019,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.28852,44.94832
+Feature,Milkweed Maps Festival of New Works  ,Pangea,,,2025,"711 W Lake St, Minneapolis, MN, 55408",Event,,Point,-93.28852,44.94832

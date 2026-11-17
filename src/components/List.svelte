@@ -34,7 +34,7 @@
 		{
 			id: 'gatherings',
 			kicker: 'Gathering places',
-			title: 'Community thrives together',
+			title: 'Lake Street as a site of gatherings.',
 			text: 'Community assemblies and meetings regularly take place in the shared spaces along the corridor, cementing Lake Street as a place for people to gather.  ',
 			filter: (p: Place) => /gatherings/i.test(p.properties.Type)
 		},
@@ -170,7 +170,7 @@
 				<span class="chapter-count">{places.filter(chapter.filter).length} locations</span>
 			</article>{/each}
 	</section>
-	<section class="directory">
+	<!-- <section class="directory">
 		<div class="directory-head">
 			<div><h2>Search</h2></div>
 			<span>{places.length} places</span>
@@ -187,18 +187,7 @@
 				></label
 			>
 		</div>
-		<div class="place-grid">
-			{#each visiblePlaces as place, i (`${place.properties.Name}-${i}`)}<button
-					class="place-card"
-					onclick={() => choose(place)}
-					><span class="place-dot"></span><span
-						><strong>{place.properties.Name}</strong><small>{place.properties.Address}</small><em
-							>{place.properties.Type} · {place.properties.Still_there_}</em
-						></span
-					><span class="arrow">↗</span></button
-				>{:else}<p>No places match those filters.</p>{/each}
-		</div>
-	</section>
+	</section> -->
 </div>
 
 <style>
