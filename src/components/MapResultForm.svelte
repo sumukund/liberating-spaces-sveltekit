@@ -30,14 +30,14 @@
 	function loadRecord() {
 		const record = records.find((item) => item.id === recordId);
 		if (!record) return;
-		name = record.Name ?? ''; type = record.Type ?? ''; status = record.Still_there_ ?? 'Present';
+		name = record.Name ?? ''; type = record.Type ?? '';
 		address = record.Address ?? ''; description = record.description ?? '';
 		longitude = String(record.coordinates?.[0] ?? -93.25); latitude = String(record.coordinates?.[1] ?? 44.948);
 	}
 	async function submit(event: SubmitEvent) {
 		event.preventDefault(); saving = true; message = '';
 		try {
-			await savePlace({ Name: name, Type: type, Still_there_: status, Address: address, description, coordinates: [Number(longitude), Number(latitude)] }, recordId);
+			await savePlace({ Name: name, Type: type, Address: address, description, coordinates: [Number(longitude), Number(latitude)] }, recordId);
 			message = recordId ? 'Map result updated.' : 'Map result added.';
 			if (!recordId) { name = ''; type = ''; address = ''; description = ''; }
 		} catch (error) { message = error instanceof Error ? error.message : 'Unable to save map result.'; }

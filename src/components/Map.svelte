@@ -10,7 +10,6 @@
 		properties: {
 			Name: string;
 			Type: string;
-			Still_there_: string;
 			Address: string;
 			description: string;
 			Year?: string | number;
@@ -105,16 +104,16 @@
 						'circle-radius': ['interpolate', ['linear'], ['zoom'], 10, 5, 15, 9],
 						'circle-color': [
 							'match',
-							['get', 'Still_there_'],
-							'Present',
-							'#16856b',
-							'Future',
-							'#7450b8',
-							'Gone',
-							'#c05b48',
-							'Past',
-							'#c05b48',
-							'#d29a38'
+							['get', 'Type'],
+							'Event', '#a44735',
+							'Performance', '#a44735',
+							'Installation', '#c0783d',
+							'Sculpture', '#c0783d',
+							'Exhibition', '#c0783d',
+							'Art Organization', '#526b58',
+							'Cultural Organization', '#526b58',
+							'Community Center', '#526b58',
+							'#62666a'
 						],
 						'circle-stroke-color': '#fffaf2',
 						'circle-stroke-width': 2
@@ -153,7 +152,7 @@
 				<button class="close" aria-label="Close details" onclick={() => selectedPlace.set(null)}
 					>×</button
 				>
-				<p class="eyebrow">{selected.properties.Type} · {selected.properties.Still_there_}</p>
+				<p class="eyebrow">{selected.properties.Type} </p>
 				<h2>{selected.properties.Name}</h2>
 				<p>{selected.properties.Address}</p>
 			</article>{/if}

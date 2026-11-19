@@ -11,7 +11,6 @@
 		properties: {
 			Name: string;
 			Type: string;
-			Still_there_: string;
 			Address: string;
 			description: string;
 			_index?: number;
@@ -76,13 +75,6 @@
 			text: 'Murals that brighten the neighborhood and showcase the diversity of culture in Minnesota.',
 			filter: (p: Place) =>
 				/mural/i.test(p.properties.Type)
-		},
-		{
-			id: 'past',
-			kicker: 'Memories',
-			title: 'Lake Street ',
-			text: 'Past locations are part of the street’s history and show us how the art community has changed over time.',
-			filter: (p: Place) => /past/i.test(p.properties.Still_there_)
 		}
 	];
 	let listElement: HTMLElement;
@@ -90,19 +82,13 @@
 	let typeFilter = $state('All types');
 	let statusFilter = $state('All statuses');
 	let types = $derived(['All types', ...new Set(places.map((p) => p.properties.Type).filter(Boolean))]);
-	let statuses = $derived([
-		'All statuses',
-		...new Set(places.map((p) => p.properties.Still_there_).filter(Boolean))
-	]);
 	let visiblePlaces = $derived(
 		places.filter((p) => {
 			const q = search.toLowerCase();
 			return (
 				chapters[$activeChapter].filter(p) &&
 				(!q || `${p.properties.Name} ${p.properties.Address}`.toLowerCase().includes(q)) &&
-				(typeFilter === 'All types' || p.properties.Type === typeFilter) &&
-				(statusFilter === 'All statuses' || p.properties.Still_there_ === statusFilter)
-			);
+				(typeFilter === 'All types' || p.properties.Type === typeFilter) 			);
 		})
 	);
 	$effect(() => {
@@ -122,7 +108,7 @@
 			const cloud = cloudRecords.map((record) => ({
 				type: 'Feature' as const,
 				geometry: { type: 'Point' as const, coordinates: record.coordinates ?? [-93.25, 44.948] as [number, number] },
-				properties: { Name: record.Name, Type: record.Type, Still_there_: record.Still_there_, Address: record.Address, description: record.description, _id: record.id }
+				properties: { Name: record.Name, Type: record.Type, Address: record.Address, description: record.description, _id: record.id }
 			}));
 			places = [...places.filter((place) => !place.properties._id), ...cloud];
 		};

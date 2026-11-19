@@ -70,9 +70,9 @@ export function watchPlaces(onError = console.error) {
 
 export async function savePlace(place, id = '') {
 	if (!firebaseConfigured) throw new Error('Add the Firebase API key and project ID to the environment to enable saving.');
-	const { Name, Type, Still_there_, Address, description, coordinates } = place;
-	const fields = Object.fromEntries(Object.entries({ Name, Type, Still_there_, Address, description, coordinates, updatedAt: new Date().toISOString() }).map(([key, value]) => [key, encodeValue(value)]));
-	const url = id ? `${endpoint}/${encodeURIComponent(id)}?updateMask.fieldPaths=Name&updateMask.fieldPaths=Type&updateMask.fieldPaths=Still_there_&updateMask.fieldPaths=Address&updateMask.fieldPaths=description&updateMask.fieldPaths=coordinates&updateMask.fieldPaths=updatedAt` : endpoint;
+	const { Name, Type, Address, description, coordinates } = place;
+	const fields = Object.fromEntries(Object.entries({ Name, Type, Address, description, coordinates, updatedAt: new Date().toISOString() }).map(([key, value]) => [key, encodeValue(value)]));
+	const url = id ? `${endpoint}/${encodeURIComponent(id)}?updateMask.fieldPaths=Name&updateMask.fieldPaths=Type&updateMask.fieldPaths=Address&updateMask.fieldPaths=description&updateMask.fieldPaths=coordinates&updateMask.fieldPaths=updatedAt` : endpoint;
 	await request(url, { method: id ? 'PATCH' : 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ fields }) });
 	await refreshPlaces();
 }

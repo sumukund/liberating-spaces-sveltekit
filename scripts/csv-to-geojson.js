@@ -74,9 +74,6 @@ export function csvToGeoJson(csv, { name = 'CSV import' } = {}) {
 				properties[header.slice('properties.'.length)] = value;
 			}
 		}
-		// The app reads Still_there_ directly; the source CSV stores it in description text.
-		const status = properties.description?.match(/Still there\?:\s*([^<\n]+)/i)?.[1]?.trim();
-		if (status && !properties.Still_there_) properties.Still_there_ = status;
 
 		return [{
 			type: 'Feature',
