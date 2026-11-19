@@ -144,13 +144,6 @@
 </script>
 
 <div class="list-column" bind:this={listElement}>
-	<header class="topbar">
-		<a class="brand" href="#top"
-			><span
-				><strong>Liberating Spaces</strong><small>Lake Street Art Map</small></span
-			></a
-		><a class="about-link" href="#collection">Explore the map</a>
-	</header>
 	<section class="intro" id="top">
 		<h1>Art <br />on <i>Lake Street</i></h1>
 		<p class="intro-copy">
@@ -170,24 +163,6 @@
 				<span class="chapter-count">{places.filter(chapter.filter).length} locations</span>
 			</article>{/each}
 	</section>
-	<!-- <section class="directory">
-		<div class="directory-head">
-			<div><h2>Search</h2></div>
-			<span>{places.length} places</span>
-		</div>
-		<div class="filters">
-			<label><span>Search</span><input bind:value={search} placeholder="Name or address" /></label
-			><label
-				><span>Type</span><select bind:value={typeFilter}
-					>{#each types as type}<option>{type}</option>{/each}</select
-				></label
-			><label
-				><span>Status</span><select bind:value={statusFilter}
-					>{#each statuses as status}<option>{status}</option>{/each}</select
-				></label
-			>
-		</div>
-	</section> -->
 </div>
 
 <style>

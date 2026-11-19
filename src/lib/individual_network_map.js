@@ -65,5 +65,41 @@ export const individuals = [
 			'Anju Madhok',
 			'Eric Tu'
 		]
+	},
+	{
+		id: 'mire-regulus',
+		name: 'Miré Regulus',
+		top8: [
+			'Mankwe Ndosi',
+			'Ellen Hinchcliffe',
+			'Diver Van Avery',
+			'Or Levinson',
+			'Malia Burkhart',
+			'Douglas Ewart',
+			'Paige Reynolds',
+			'Rupa Thadhani'
+		]
+	},
+	{
+		id: 'sarah-duncan',
+		name: 'Sarah Duncan',
+		top8: [
+			'Diana Korpi',
+'Aster Duncan',
+'Sara Parr',
+'Anika Fajardo',
+'Jess Rhodes'
+		]
+	},
+	
+	{
+		id: 'meena-natrajan',
+		name: 'Meena Natrajan',
+		top8: ['Ismail Khalidi', 'Dipankar Mukherjee', 'Sir Curtis Kirby', 'Sandra Agustin']
+	},
+	{
+		id: 'dipankar-mukherjee',
+		name: 'Dipankar Mukherjee',
+		top8: ['Dr. A Pavan', 'Sarah Grier', 'Dr. Pooja Goswami', 'Mike Grogan', 'Brackley Frayer', 'Ananya Chatterjea', 'Sharon Day', 'Setu Jones', 'Orin Herfindahl', 'Sandra Agustin', 'Ahmed Yousef', 'Kathy Haddad', 'Pedro Bayoun']
 	}
 ];
