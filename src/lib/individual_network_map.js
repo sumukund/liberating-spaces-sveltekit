@@ -101,5 +101,10 @@ export const individuals = [
 		id: 'dipankar-mukherjee',
 		name: 'Dipankar Mukherjee',
 		top8: ['Dr. A Pavan', 'Sarah Grier', 'Dr. Pooja Goswami', 'Mike Grogan', 'Brackley Frayer', 'Ananya Chatterjea', 'Sharon Day', 'Setu Jones', 'Orin Herfindahl', 'Sandra Agustin', 'Ahmed Yousef', 'Kathy Haddad', 'Pedro Bayoun']
+	},
+	{
+		id: 'cicely-bass',
+		name: 'Cicely Bass',
+		top8: ['Anna Zindren', 'Dominique Drake', 'Jane Crabtree', 'Nick Olson', 'Beatrice Healey', 'Andrew Rosendorf', 'Talvin Wilks', 'Erick Hernandes-Morales']
 	}
 ];
